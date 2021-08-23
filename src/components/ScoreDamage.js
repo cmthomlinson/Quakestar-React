@@ -30,11 +30,9 @@ const ScoreDamage = () => {
 
     return (
         <div className="Home">
-          <h2>Score: {isLoaded ? <LoadingSpinner /> : null }{ items.score }</h2>
-          <img src={process.env.PUBLIC_URL + '/img/4.PNG'}/>
-          
-          <h2>Damage: {isLoaded ? <LoadingSpinner /> : null }{items.damage}</h2>
-          <img src={process.env.PUBLIC_URL + '/img/2.PNG'}/>
+          <h2>Score: { items.score }</h2>
+      
+          <h2>Damage: { items.damage }</h2>
         </div>
     );
 }
