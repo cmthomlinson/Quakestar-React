@@ -25,7 +25,7 @@ const Textform = () => {
             }
         }}
 
-        const post_url = "https://quakestar.herokuapp.com/" + floor_id + "/" + que_id + "/"  + doc_id
+        const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
         fetch(post_url, {
         method: 'POST',
