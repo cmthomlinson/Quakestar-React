@@ -7,6 +7,7 @@ const Home = () => {
         <div className="Home">
             <Container>
                 <h2>Home</h2>
+                <p>Welcome to QuakeStar questionnaire. To start the questionnaire, go onto the start tab and fill in your details.</p>
             </Container>
         </div>
     );
