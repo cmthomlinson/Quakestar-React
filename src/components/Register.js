@@ -27,7 +27,7 @@ const Register = () => {
             "floor_id": floor_id
         }}
 
-        const url = 'https://quakestar.herokuapp.com/' + body['user']['floor_id']
+        const url = 'https://quakestar.herokuapp.com/register/' +  body['user']['floor_id']
 
         fetch(url, {
         method: 'POST',

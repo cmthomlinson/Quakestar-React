@@ -13,7 +13,7 @@ const ScoreDamage = () => {
     
 
     useEffect(() => {
-        const url = "https://quakestar.herokuapp.com/" + floor_id + "/" + doc_id
+        const url = "https://quakestar.herokuapp.com/sd/" + floor_id + "/" + doc_id
         fetch(url)
           .then(res => res.json())
           .then(
