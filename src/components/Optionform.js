@@ -60,8 +60,14 @@ const Optionform = () => {
                     </Form.Select>
                 </Form.Group>
                 <br />
-                <Button variant="primary" type="submit" disabled={isLoading}>Submit</Button>
-                
+                <Button
+                    variant="primary"
+                    type="submit"
+                    disabled={isLoading}
+                    onClick={!isLoading ? handleSubmit : null}
+                    >
+                    {isLoading ? 'Loading…' : 'Submit'}
+                </Button>
             </Form>
         </div>
     )

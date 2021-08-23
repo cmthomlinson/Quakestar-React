@@ -13,12 +13,13 @@ const Register = () => {
     const [address, setaddress] = useState("");
     const [floor_id, setfloor_id] = useState("1");
 
+    const [isLoading, setIsLoading] = useState(false);
+
     
-
-
 
     const handleSubmit = e => {
         e.preventDefault();
+        setIsLoading(true);
         const body = { user: {
             "firstName": firstName,
             "lastName": lastName,
@@ -30,19 +31,21 @@ const Register = () => {
         const url = 'https://quakestar.herokuapp.com/register/' +  body['user']['floor_id']
 
         fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(body),
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
         })
         .then(response => response.json())
         .then(data => {
-        const next_route = "/question/" + floor_id +"/1/" + data
-        history.push(next_route)
+            const next_route = "/question/" + floor_id +"/1/" + data
+            setIsLoading(false);
+            history.push(next_route)
         })
         .catch((error) => {
-        console.error('Error:', error);
+            setIsLoading(false);
+            console.error('Error:', error);
         });
 
 
@@ -53,7 +56,7 @@ const Register = () => {
             <Container>
                 <h1>Start Questionnaire</h1>
                 <Form onSubmit={handleSubmit}>
-                    <Form.Group size="lg" controlId="firstName">
+                    <Form.Group size="lg" controlId="firstName" required>
                         <Form.Label>First name</Form.Label>
                         <Form.Control
                             autoFocus
@@ -62,7 +65,7 @@ const Register = () => {
                             onChange={e => setfirstName(e.target.value)}
                         />
                     </Form.Group>
-                    <Form.Group size="lg" controlId="lastName">
+                    <Form.Group size="lg" controlId="lastName" required>
                         <Form.Label>Last Name</Form.Label>
                         <Form.Control
                             autoFocus
@@ -71,7 +74,7 @@ const Register = () => {
                             onChange={e => setlastName(e.target.value)}
                         />
                     </Form.Group>
-                    <Form.Group size="lg" controlId="email">
+                    <Form.Group size="lg" controlId="email" required>
                         <Form.Label>Email</Form.Label>
                         <Form.Control
                             autoFocus
@@ -80,7 +83,7 @@ const Register = () => {
                             onChange={e => setemail(e.target.value)}
                         />
                     </Form.Group>
-                    <Form.Group size="lg" controlId="Address">
+                    <Form.Group size="lg" controlId="Address" required>
                         <Form.Label>Address</Form.Label>
                         <Form.Control
                             autoFocus
@@ -89,7 +92,7 @@ const Register = () => {
                             onChange={e => setaddress(e.target.value)}
                         />
                     </Form.Group>
-                    <Form.Group size="lg" controlId="Floor id">
+                    <Form.Group size="lg" controlId="Floor id" required>
                         <Form.Label>Floors</Form.Label>
                         <Form.Select onChange={e => setfloor_id(e.target.value)}>
                             <option id="1" value="1">1 Floor</option>
@@ -101,8 +104,13 @@ const Register = () => {
 
                         </Form.Select>
                     </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Submit
+                    <Button
+                        variant="primary"
+                        type="submit"
+                        disabled={isLoading}
+                        onClick={!isLoading ? handleSubmit : null}
+                        >
+                        {isLoading ? 'Loading…' : 'Submit'}
                     </Button>
 
                 </Form>

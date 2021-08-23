@@ -1,11 +1,13 @@
 import { useParams } from "react-router";
 import { Questiondata } from "../questions";
+import { Container, Row, Col } from 'react-bootstrap'
 
 import Optionform from "./Optionform";
 import Textform from "./Textform";
-import Container from 'react-bootstrap/Container'
 import ScoreDamage from "./ScoreDamage";
 import Button from "./Nextquebutton";
+import Menu from "./Menu";
+
 
 const Question = () => {
     const { floor_id, que_id } = useParams();
@@ -15,11 +17,21 @@ const Question = () => {
         return (
             <Container>
                 <div>
-                    <ScoreDamage/>
-                    <Optionform/>
-                    <Button/>
-               
+                    <Row>
+                        <Col xs={9}>
+                            <ScoreDamage/>
+                            <Optionform/>
+                            <Button/>
+                        </Col>
+                        <Col xs={1}>
+                        </Col>
+                        <Col>
+                            <h1>Menu</h1>
+                            <Menu/>
 
+                        </Col>
+
+                    </Row>
                 </div>
             </Container>
 
@@ -31,10 +43,20 @@ const Question = () => {
         return (
             <Container>
                 <div>
-                    <ScoreDamage/>
-                    <Textform/>
-                    <Button/>
-                
+                    <Row>
+                        <Col xs={9}>
+                            <ScoreDamage/>
+                            <Textform/>
+                            <Button/>
+                        </Col>
+                        <Col xs={1}>
+                        </Col>
+                        <Col>
+                            <h1>Menu</h1>
+                            <Menu/>
+                        </Col>
+
+                    </Row>
                 </div>
             </Container>
         )

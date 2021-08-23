@@ -11,9 +11,9 @@ const Button = () => {
 
     const prev_que = que_id - 1
     const next_que = parseInt(que_id) + 1
-    const prev_link = "https://main.d3jmjz4gq263kh.amplifyapp.com/question/" + floor_id + "/" + prev_que + "/" + doc_id
-    const next_link = "https://main.d3jmjz4gq263kh.amplifyapp.com/question/" + floor_id + "/" + next_que + "/" + doc_id
-    const results_link = "https://main.d3jmjz4gq263kh.amplifyapp.com/results/"+ floor_id + "/" + doc_id
+    const prev_link = "http://localhost:3000/question/" + floor_id + "/" + prev_que + "/" + doc_id
+    const next_link = "http://localhost:3000/question/" + floor_id + "/" + next_que + "/" + doc_id
+    const results_link = "http://localhost:3000/results/"+ floor_id + "/" + doc_id
 
     if (que_id === "1") {
         return (
