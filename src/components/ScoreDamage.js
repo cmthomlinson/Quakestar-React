@@ -30,7 +30,7 @@ const ScoreDamage = () => {
 
     return (
         <div className="Home">
-          <h2>Score: { items.score }</h2>
+          <h2>Strength: { items.score }</h2>
       
           <h2>Damage: { items.damage }</h2>
         </div>

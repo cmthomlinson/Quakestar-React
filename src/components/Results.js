@@ -8,7 +8,7 @@ const Home = () => {
     const { floor_id, que_id, doc_id } = useParams();
 
     useEffect(() => {
-        const url = "https://quakestar.herokuapp.com/" + floor_id + "/" + doc_id
+        const url = "https://quakestar.herokuapp.com/results/" + floor_id + "/" + doc_id
         fetch(url)
           .then(res => res.json())
           .then(
