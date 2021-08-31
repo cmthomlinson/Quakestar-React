@@ -1,26 +1,23 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Container, Nav } from "react-bootstrap";
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Question from "./components/Question";
 import Home from "./components/Home";
-import Results from "./components/Results";
 import Register from "./components/Register";
 import Admin from "./components/Admin";
 
+import './style.css'
 
 function App() {
 
   return (
     <Router>
-      <Navbar>
+      <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
-          <img src={process.env.PUBLIC_URL + '/img/Quakestar_280px.png'}
-            width="70%" height="70%"         
-            className="d-inline-block align-top"/>
-          </Navbar.Brand>
+          <Navbar.Brand href="">QuakeStar</Navbar.Brand>
           <Nav className="me-auto">
             <LinkContainer to="/">
               <Nav.Link>Home</Nav.Link>
@@ -47,9 +44,6 @@ function App() {
             </Route>
             <Route path="/question/:floor_id/:que_id/:doc_id">
               <Question />
-            </Route>
-            <Route path="/results/:floor_id/:doc_id">
-              <Results />
             </Route>
             <Route path="/admin">
               <Admin />

@@ -1,11 +1,14 @@
 import { useParams } from "react-router";
-import { useState} from "react";
+import { useState, useEffect } from "react";
 
 import { Questiondata } from "../questions";
 import { Form, Button } from 'react-bootstrap'
 
-const Textform = () => {
-    const { floor_id, que_id, doc_id } = useParams();
+import ImgStrength from "./ImgStrength";
+import ImgDamage from "./ImgDamage";
+
+const Textform = ({que_id, onformSubmit, response}) => {
+    const { floor_id, doc_id } = useParams();
 
     const question = Questiondata[floor_id][que_id]
 
@@ -13,6 +16,42 @@ const Textform = () => {
     const [text_y, setText_y] = useState();
 
     const [isLoading, setIsLoading] = useState(false);
+    const [items, setItems] = useState([]);
+
+    function getscoreanddamage(floor_id, doc_id) {
+        
+        const url = "https://quakestar.herokuapp.com/sd/" + floor_id + "/" + doc_id
+        fetch(url)
+          .then(res => res.json())
+          .then(
+            (result) => {
+                setItems(result)
+                setIsLoading(false);
+            },
+            (error) => {
+                setIsLoading(false);
+    
+            }
+        )
+    }
+
+    useEffect(() => {
+        getscoreanddamage(floor_id, doc_id)
+    }, [])
+
+    function get_reponse(response, xy) {
+        if (response === 0) {
+            return 
+        }
+        else {
+            return response[xy]
+        }
+    }
+
+    const x_value = get_reponse(response, 'x')
+    const y_value = get_reponse(response, 'y')
+
+    
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -24,6 +63,8 @@ const Textform = () => {
                 "y": parseInt(text_y)
             }
         }}
+
+        onformSubmit(body['post']['response'], que_id)
 
         const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
@@ -47,20 +88,31 @@ const Textform = () => {
     }
 
     return (
-        <div className="Question">
-      
-            <h2>{question.question}</h2>
+        <div className="form">
+            <h2>Strength: { items.score }</h2>
+            <ImgStrength score={ items.score }/>
+            <h2>Damage: { items.damage }</h2>
+            <ImgDamage damage={ items.damage }/>
+            <h2>{que_id}: {question.question}</h2>
             <p>{question.description}</p>
             <Form onSubmit={handleSubmit}>
                 <Form.Group>
                 <Form.Label>X-direction</Form.Label>
-                <Form.Control type="input" placeholder="" onChange={e => setText_x(e.target.value)} value={text_x}/>
+                <Form.Control type="input" onChange={e => setText_x(e.target.value)} value={x_value}/>
                 <Form.Label>Y-direction</Form.Label>
-                <Form.Control type="input" placeholder="" onChange={e => setText_y(e.target.value)} value={text_y}/>
-                    <Button variant="primary" type="submit" disabled={isLoading}>
-                        Submit
-                    </Button>
+                <Form.Control type="input" onChange={e => setText_y(e.target.value)} value={y_value}/>
                 </Form.Group>
+                <br />
+                <Button
+                    variant="primary"
+                    type="submit"
+                    disabled={isLoading}
+                    onClick={!isLoading ? handleSubmit : null}
+                    >
+                    {isLoading ? 'Loading…' : 'Submit'}
+                </Button>
+        
+                
             </Form>
      
 

@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import { Form, Button, Container } from 'react-bootstrap'
 
 import { useHistory } from "react-router-dom";
@@ -7,10 +7,13 @@ import { useHistory } from "react-router-dom";
 
 const Register = () => {
     const history = useHistory();
-    const [firstName, setfirstName] = useState("");
-    const [lastName, setlastName] = useState("");
+    const [name, setName] = useState("");
     const [email, setemail] = useState("");
     const [address, setaddress] = useState("");
+    const [suburb, setSuburb] = useState("");
+    const [city, setCity] = useState("");
+    const [postcode, setPostcode] = useState("");
+
     const [floor_id, setfloor_id] = useState("1");
 
     const [isLoading, setIsLoading] = useState(false);
@@ -21,10 +24,12 @@ const Register = () => {
         e.preventDefault();
         setIsLoading(true);
         const body = { user: {
-            "firstName": firstName,
-            "lastName": lastName,
+            "name": name,
             "email": email,
             "address": address,
+            "suburb": suburb,
+            "city": city,
+            "postcode": postcode,
             "floor_id": floor_id
         }}
 
@@ -39,7 +44,7 @@ const Register = () => {
         })
         .then(response => response.json())
         .then(data => {
-            const next_route = "/question/" + floor_id +"/1/" + data
+            const next_route = "/question/" + floor_id +"/" + 1 + "/" + data
             setIsLoading(false);
             history.push(next_route)
         })
@@ -57,23 +62,15 @@ const Register = () => {
                 <h1>Start Questionnaire</h1>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group size="lg" controlId="firstName" required>
-                        <Form.Label>First name</Form.Label>
+                        <Form.Label>Name</Form.Label>
                         <Form.Control
                             autoFocus
                             type="firstName"
-                            value={firstName}
-                            onChange={e => setfirstName(e.target.value)}
+                            value={name}
+                            onChange={e => setName(e.target.value)}
                         />
                     </Form.Group>
-                    <Form.Group size="lg" controlId="lastName" required>
-                        <Form.Label>Last Name</Form.Label>
-                        <Form.Control
-                            autoFocus
-                            type="lastName"
-                            value={lastName}
-                            onChange={e => setlastName(e.target.value)}
-                        />
-                    </Form.Group>
+
                     <Form.Group size="lg" controlId="email" required>
                         <Form.Label>Email</Form.Label>
                         <Form.Control
@@ -84,12 +81,39 @@ const Register = () => {
                         />
                     </Form.Group>
                     <Form.Group size="lg" controlId="Address" required>
-                        <Form.Label>Address</Form.Label>
+                        <Form.Label>Address line</Form.Label>
                         <Form.Control
                             autoFocus
                             type="address"
                             value={address}
                             onChange={e => setaddress(e.target.value)}
+                        />
+                    </Form.Group>
+                    <Form.Group size="lg" controlId="Suburb" required>
+                        <Form.Label>Suburb</Form.Label>
+                        <Form.Control
+                            autoFocus
+                            type="suburb"
+                            value={suburb}
+                            onChange={e => setSuburb(e.target.value)}
+                        />
+                    </Form.Group>
+                    <Form.Group size="lg" controlId="City" required>
+                        <Form.Label>City</Form.Label>
+                        <Form.Control
+                            autoFocus
+                            type="City"
+                            value={city}
+                            onChange={e => setCity(e.target.value)}
+                        />
+                    </Form.Group>
+                    <Form.Group size="lg" controlId="Postcode" required>
+                        <Form.Label>Postcode</Form.Label>
+                        <Form.Control
+                            autoFocus
+                            type="City"
+                            value={postcode}
+                            onChange={e => setPostcode(e.target.value)}
                         />
                     </Form.Group>
                     <Form.Group size="lg" controlId="Floor id" required>
@@ -107,6 +131,7 @@ const Register = () => {
                     <Button
                         variant="primary"
                         type="submit"
+                        className="submit-button"
                         disabled={isLoading}
                         onClick={!isLoading ? handleSubmit : null}
                         >

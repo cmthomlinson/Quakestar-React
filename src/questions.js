@@ -370,6 +370,18 @@ export const Questiondata = {
                 row_input: "74",
                 col_input: "6"
             }
+        },
+        "22": {
+            question: "",
+            description: "",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "results",
+            current_route: "results"
+         
+
         }
     },
     "2": {
@@ -878,6 +890,18 @@ export const Questiondata = {
                 row_input: "73",
                 col_input: "6"
             }
+        },
+        "29": {
+            question: "",
+            description: "",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "results",
+            current_route: "results"
+         
+
         }
     },
     "3": {
@@ -1521,6 +1545,18 @@ export const Questiondata = {
                 row_input: "72",
                 col_input: "6"
             }
+        },
+        "36": {
+            question: "",
+            description: "",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "results",
+            current_route: "results"
+         
+
         }
     },
     "1b": {
@@ -2029,6 +2065,18 @@ export const Questiondata = {
                 row_input: "75",
                 col_input: "6"
             }
+        },
+        "29": {
+            question: "",
+            description: "",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "results",
+            current_route: "results"
+         
+
         }
     },
     "2b": {
@@ -2672,6 +2720,18 @@ export const Questiondata = {
                 row_input: "75",
                 col_input: "6"
             }
+        },
+        "36": {
+            question: "",
+            description: "",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "results",
+            current_route: "results"
+         
+
         }
     },
     "3b": {
@@ -3450,6 +3510,18 @@ export const Questiondata = {
                 row_input: "75",
                 col_input: "6"
             }
+        },
+        "43": {
+            question: "",
+            description: "",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "results",
+            current_route: "results",
+         
+
         }
     }
 }

@@ -1,0 +1,28 @@
+.form {
+    position: relative;
+    padding: 1rem;
+    border: .3rem solid #ececec;
+    border-radius: 8px;
+    margin-right: 0;
+    margin-left: 0;
+    
+}
+
+.next-button {
+    padding-top: 1rem;
+    float: right;
+}
+
+.prev-button {
+    padding-top: 1rem;
+    float: left;
+}
+
+.submit-button {
+    margin-top: 1rem;
+}
+
+.menu2 {
+    white-space: nowrap;
+}
+
