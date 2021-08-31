@@ -796,7 +796,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Ground floor area",
@@ -816,7 +816,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "First floor area",
@@ -836,7 +836,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Roof area",
@@ -856,7 +856,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Length of Ground floor bracing walls",
@@ -876,7 +876,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Length of First floor bracing walls",
@@ -1411,7 +1411,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Ground floor area",
@@ -1431,7 +1431,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "First floor area",
@@ -1451,7 +1451,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Second floor area",
@@ -1471,7 +1471,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Roof area",
@@ -1491,7 +1491,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Ground floor bracing walls",
@@ -1511,7 +1511,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of First floor bracing walls",
@@ -1531,7 +1531,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Second floor bracing walls",
@@ -1971,7 +1971,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Ground floor area",
@@ -1991,7 +1991,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Basement floor area",
@@ -2011,7 +2011,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Roof area",
@@ -2031,7 +2031,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Ground floor bracing walls",
@@ -2051,7 +2051,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Basement floor bracing walls",
@@ -2586,7 +2586,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Ground floor area",
@@ -2606,7 +2606,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "First floor area",
@@ -2626,7 +2626,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Basement floor area",
@@ -2646,7 +2646,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Roof area",
@@ -2666,7 +2666,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Length of Ground floor bracing walls",
@@ -2686,7 +2686,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Length of First floor bracing walls",
@@ -2706,7 +2706,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Length of Basement floor bracing walls",
@@ -3336,7 +3336,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Ground floor area",
@@ -3356,7 +3356,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "First floor area",
@@ -3376,7 +3376,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Second floor area",
@@ -3396,7 +3396,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Basement floor area",
@@ -3416,7 +3416,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Roof area",
@@ -3436,7 +3436,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Ground floor bracing walls",
@@ -3456,7 +3456,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of First floor bracing walls",
@@ -3476,7 +3476,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Second floor bracing walls",
@@ -3496,7 +3496,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Basement floor bracing walls",
