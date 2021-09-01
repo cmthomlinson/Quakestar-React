@@ -269,10 +269,10 @@ const Question = () => {
                 <Container>
                     <div>
                         <Row>
-                            <Image src={require('../img/Quakestar_280px.png')}/>
+                            
                             <h2>Results</h2>
                             <Col xs={8} className="form">
-                                
+                                <Image src={require('../img/Quakestar_280px.png')}/>
                                 <p>Congratulations you have finished the questionnaire</p>
                                 <Results submited={submited} floor_id={floor_id} que_id={que_id} doc_id={doc_id}/>
                             </Col>
