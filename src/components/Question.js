@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useParams, Link } from "react-router";
 import { Questiondata } from "../questions";
 import { Container, Row, Col, Button, ListGroup, Image, Alert } from 'react-bootstrap'

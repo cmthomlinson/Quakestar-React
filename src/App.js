@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Container, Nav } from "react-bootstrap";
