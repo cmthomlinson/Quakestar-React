@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 import Optionform from "./Optionform";
 import Textform from "./Textform";
 import Picture from "./Picture";
-
+import Results from "./Results";
 
 const Question = () => {
     function submitContruct(floor_id) {
@@ -94,7 +94,9 @@ const Question = () => {
             }
         }
         history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)
+
     }
+
 
     const question = Questiondata[floor_id][que_id]
 
@@ -177,8 +179,47 @@ const Question = () => {
 
 
         )
-        
 
+    }
+    if (question.current_route === "text_question" && parseInt(que_id) === Object.keys(Questiondata[floor_id]).length-1) {
+        return (
+            <div className="Question">
+                <Container>
+                    <div>
+                        <Row>
+                            <Col xs={8}>
+                                <Image src={process.env.PUBLIC_URL + '/img/Quakestar_280px.png'}/>
+                                <Textform que_id={que_id} response={submited[que_id]} onformSubmit={handleTextChange}/>
+                                <div className="next-button">
+                                    <Button onClick={nextQue} disabled={isLoading}>Results</Button> 
+                                </div>
+                                <div className="prev-button">
+                                    <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
+                                </div>
+                                <Picture floor_id={floor_id} que_id={que_id}/>
+                            
+                            </Col>
+                            <Col xs={1}>
+                            </Col>
+                            <Col>
+                            
+                            <div className="">
+                                <h2>Navigation</h2>
+                                <Menu 
+                                submited={submited} 
+                                floor_id={floor_id} 
+                                que_id={que_id} 
+                                doc_id={doc_id}
+                                />
+                            </div>
+                            </Col>
+
+                        </Row>
+                    </div>
+                </Container>
+            </div>
+
+        )
     }
     if (question.current_route === "text_question") {
         return (
@@ -229,8 +270,8 @@ const Question = () => {
                             <h2>Results</h2>
                             <Col xs={8} className="form">
                                 
-                                <p>Congradulations you have finished the questionnaire</p>
-                                <p>{submited[3]}</p>
+                                <p>Congratulations you have finished the questionnaire</p>
+                                <Results submited={submited} floor_id={floor_id} que_id={que_id} doc_id={doc_id}/>
                             </Col>
                             <Col xs={1}>
                             </Col>
@@ -271,17 +312,6 @@ const Menu = ({floor_id, que_id, doc_id, submited}) => {
     }
     
 
-    function get_all_submitted(submited, floor_id, que_id, doc_id) {
-        const que_url = que_id + 1
-        return <Alert>You have not completed a question</Alert>
-        for (const i in submited) {
-            if (submited[i] === 0) {
-                
-            }
-        }
-        history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)
-    }
-
     return(
         <ListGroup>
             {res.map((index, item)=>{
@@ -295,17 +325,22 @@ const Menu = ({floor_id, que_id, doc_id, submited}) => {
                 }
                 if (parseInt(item+1) === Object.keys(Questiondata[floor_id]).length) {
                     return (
-                        <ListGroup.Item variant="info" action onClick={() => get_all_submitted(submited, floor_id, que_id, doc_id)}>Results</ListGroup.Item>       
+                        <ListGroup.Item variant="info" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}>Results</ListGroup.Item>       
                     )
                     
                 }
-                if (submited[item+1] != 0 ) {
+                if (submited[item+1] === undefined ) {
+                    return (
+                        <ListGroup.Item variant="danger" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}>{item+1}:  {index}</ListGroup.Item>       
+                    )
+                    
+                }
+                if (submited[item+1] != 0) {
                     return (
                         <ListGroup.Item variant="success" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}>{item+1}:  {index}</ListGroup.Item>       
                     )
                     
                 }
-
                 else {
                     return (
                         <ListGroup.Item variant="outline-primary" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}>{item+1}:  {index}</ListGroup.Item>            

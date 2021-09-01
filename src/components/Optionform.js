@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Form, Button, Spinner } from 'react-bootstrap'
+import { Form, Button, Alert } from 'react-bootstrap'
 import { useParams } from "react-router";
 
 import { Questiondata } from "../questions";
@@ -31,6 +31,7 @@ const Optionform = ({que_id, onformSubmit, response}) => {
     }
 
     const options = get_options(response)
+    
     console.log(options)
  
     const [isLoading, setIsLoading] = useState(false);
@@ -59,7 +60,7 @@ const Optionform = ({que_id, onformSubmit, response}) => {
 
 
     const handleSubmit = e => {
-        setIsLoading(true);
+        setIsLoading(true)
         e.preventDefault();
         
         const body = { post: {

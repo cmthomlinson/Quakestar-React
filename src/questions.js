@@ -243,7 +243,7 @@ export const Questiondata = {
         },
         "17": {
             question: "What is the cladding on the roof?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -278,7 +278,7 @@ export const Questiondata = {
         },
         "18": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -688,7 +688,7 @@ export const Questiondata = {
         },
         "21": {
             question: "What is the cladding on the roof?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -723,7 +723,7 @@ export const Questiondata = {
         },
         "22": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -758,7 +758,7 @@ export const Questiondata = {
         },
         "23": {
             question: "What cladding materials are used on the First Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1268,7 +1268,7 @@ export const Questiondata = {
         },
         "25": {
             question: "What is the cladding on the roof?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1303,7 +1303,7 @@ export const Questiondata = {
         },
         "26": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1338,7 +1338,7 @@ export const Questiondata = {
         },
         "27": {
             question: "What cladding materials are used on the First Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1373,7 +1373,7 @@ export const Questiondata = {
         },
         "28": {
             question: "What cladding materials are used on the Second Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1863,7 +1863,7 @@ export const Questiondata = {
         },
         "21": {
             question: "What is the cladding on the roof?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1898,7 +1898,7 @@ export const Questiondata = {
         },
         "22": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1933,7 +1933,7 @@ export const Questiondata = {
         },
         "23": {
             question: "What cladding materials are used on the Basement Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2443,7 +2443,7 @@ export const Questiondata = {
         },
         "25": {
             question: "What is the cladding on the roof?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2478,7 +2478,7 @@ export const Questiondata = {
         },
         "26": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2513,7 +2513,7 @@ export const Questiondata = {
         },
         "27": {
             question: "What cladding materials are used on the First Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2548,7 +2548,7 @@ export const Questiondata = {
         },
         "28": {
             question: "What cladding materials are used on the Basement Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3158,7 +3158,7 @@ export const Questiondata = {
         },
         "29": {
             question: "What is the cladding on the roof?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3193,7 +3193,7 @@ export const Questiondata = {
         },
         "30": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3228,7 +3228,7 @@ export const Questiondata = {
         },
         "31": {
             question: "What cladding materials are used on the First Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3263,7 +3263,7 @@ export const Questiondata = {
         },
         "32": {
             question: "What cladding materials are used on the Second Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3298,7 +3298,7 @@ export const Questiondata = {
         },
         "33": {
             question: "What cladding materials are used on the Basement Floor?",
-            description: "You can choose more than one",
+            description: "",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
