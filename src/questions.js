@@ -316,7 +316,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Ground floor area",
@@ -336,7 +336,7 @@ export const Questiondata = {
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
                 title: "",
-                img_name: "Floor_area.PNG"
+                img_name: "Floor_area.png"
             },
             route: "textform",
             subject: "Roof area",

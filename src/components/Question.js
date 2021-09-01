@@ -108,7 +108,8 @@ const Question = () => {
                     <div>
                         <Row>
                             <Col xs={8}>
-                                <Image src={process.env.PUBLIC_URL + '/img/Quakestar_280px.png'}/>
+                                <Image src={require('../img/Quakestar_280px.png')}/>
+                             
                                 <Optionform que_id={que_id} response={submited[que_id]} onformSubmit={handleChange}/>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
@@ -148,7 +149,7 @@ const Question = () => {
                     <div>
                         <Row>
                             <Col xs={8}>
-                                <Image src={process.env.PUBLIC_URL + '/img/Quakestar_280px.png'}/>
+                                <Image src={require('../img/Quakestar_280px.png')}/>
                                 <Optionform que_id={que_id} response={submited[que_id]} onformSubmit={handleChange}/>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
@@ -189,7 +190,7 @@ const Question = () => {
                     <div>
                         <Row>
                             <Col xs={8}>
-                                <Image src={process.env.PUBLIC_URL + '/img/Quakestar_280px.png'}/>
+                                <Image src={require('../img/Quakestar_280px.png')}/>
                                 <Textform que_id={que_id} response={submited[que_id]} onformSubmit={handleTextChange}/>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Results</Button> 
@@ -229,7 +230,7 @@ const Question = () => {
                     <div>
                         <Row>
                             <Col xs={8}>
-                                <Image src={process.env.PUBLIC_URL + '/img/Quakestar_280px.png'}/>
+                                <Image src={require('../img/Quakestar_280px.png')}/>
                                 <Textform que_id={que_id} response={submited[que_id]} onformSubmit={handleTextChange}/>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button> 
@@ -268,6 +269,7 @@ const Question = () => {
                 <Container>
                     <div>
                         <Row>
+                            <Image src={require('../img/Quakestar_280px.png')}/>
                             <h2>Results</h2>
                             <Col xs={8} className="form">
                                 
