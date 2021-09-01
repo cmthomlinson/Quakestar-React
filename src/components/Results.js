@@ -44,11 +44,16 @@ const Results = ({submited, floor_id, doc_id}) => {
             <ImgDamage damage={ items.damage }/>
             {res.map((index, item)=>{
 
-                
+            if (index == 0) {
+                return (
+                    <h2 variant="primary">{item+1}:  Unsubmitted</h2>
+                )
+            }
+            else {
                 return (
                     <h2 variant="primary">{item+1}:  {index}</h2>
                 )
-
+            }  
             })}
         </div>
     )
