@@ -8,13 +8,28 @@ import { Form, Button } from 'react-bootstrap'
 import ImgStrength from "./ImgStrength";
 import ImgDamage from "./ImgDamage";
 
+const useStateWithLocalStorage = que_id => {
+    const [value, setValue] = React.useState({
+            x: "",
+            y: ""
+        }
+    );
+   
+    React.useEffect(() => {
+      localStorage.setItem(que_id, {
+            'x': value['x'],
+            'y': value['y']
+      });
+    }, [value]);
+   
+    return [value, setValue];
+};
+
 const Textform = ({que_id, onformSubmit, response}) => {
     const { floor_id, doc_id } = useParams();
 
     const question = Questiondata[floor_id][que_id]
-
-    const [text_x, setText_x] = useState();
-    const [text_y, setText_y] = useState();
+    const [value, setValue] = useStateWithLocalStorage(que_id);
 
     const [isLoading, setIsLoading] = useState(false);
     const [items, setItems] = useState([]);
@@ -40,17 +55,6 @@ const Textform = ({que_id, onformSubmit, response}) => {
         getscoreanddamage(floor_id, doc_id)
     }, [])
 
-    function get_reponse(response, xy) {
-        if (response === 0) {
-            return 
-        }
-        else {
-            return response[xy]
-        }
-    }
-
-    const x_value = get_reponse(response, 'x')
-    const y_value = get_reponse(response, 'y')
 
     
 
@@ -60,12 +64,12 @@ const Textform = ({que_id, onformSubmit, response}) => {
         
         const body = { post: {
             "response": {
-                "x": parseInt(text_x),
-                "y": parseInt(text_y)
+                "x": parseInt(value.x),
+                "y": parseInt(value.y)
             }
         }}
 
-        onformSubmit(body['post']['response'], que_id)
+        console.log(value['x'])
 
         const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
@@ -86,6 +90,7 @@ const Textform = ({que_id, onformSubmit, response}) => {
             setIsLoading(false);
             console.error('Error:', error);
         });
+
     }
 
     return (
@@ -99,11 +104,12 @@ const Textform = ({que_id, onformSubmit, response}) => {
             <Form onSubmit={handleSubmit}>
                 <Form.Group>
                 <Form.Label>X-direction</Form.Label>
-                <Form.Control type="input" onChange={e => setText_x(e.target.value)} value={x_value}/>
+                <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, x: e.target.value}))}/>
                 <Form.Label>Y-direction</Form.Label>
-                <Form.Control type="input" onChange={e => setText_y(e.target.value)} value={y_value}/>
+                <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, y: e.target.value}))}/>
                 </Form.Group>
                 <br />
+                <p>{value.x} {value.y}</p>
                 <Button
                     variant="primary"
                     type="submit"

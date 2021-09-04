@@ -11,20 +11,10 @@ import Picture from "./Picture";
 import Results from "./Results";
 
 const Question = () => {
-    function submitContruct(floor_id) {
-        const floor = Questiondata[floor_id]
-        var res = {}
-        for(var i in floor)
-            res[i] = 0
-
-        return res
-    }
 
     const { floor_id, que_id, doc_id } = useParams();
     const [isLoading, setIsLoading] = useState(false);
-    const [submited, setSubmitted] = useState(submitContruct(floor_id))
-    
-    console.log(submited)
+
 
     const history = useHistory();
     
@@ -49,24 +39,6 @@ const Question = () => {
     };
 
 
-    const handleChange = (option, que_id) => {
-        
-        setSubmitted(prevState => ({
-            ...prevState,
-            [que_id]: option
-        }));
-    };
-
-    const handleTextChange = (response, que_id) => {
-        
-        setSubmitted(prevState => ({
-            ...prevState,
-            [que_id]: {
-                "x": response['x'],
-                "y": response['y']
-            }
-        }));
-    };
 
     
 
@@ -110,7 +82,7 @@ const Question = () => {
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
                              
-                                <Optionform que_id={que_id} response={submited[que_id]} onformSubmit={handleChange}/>
+                                <Optionform que_id={que_id}/>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
                                 </div>
@@ -122,8 +94,7 @@ const Question = () => {
 
                             <div className="">
                                 <h1 className="">Menu</h1>
-                                <Menu 
-                                submited={submited} 
+                                <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
@@ -150,7 +121,7 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <Optionform que_id={que_id} response={submited[que_id]} onformSubmit={handleChange}/>
+                                <Optionform que_id={que_id}/>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
                                     
@@ -165,8 +136,7 @@ const Question = () => {
                             <Col>
                             <div className="">
                                 <h2>Navigation</h2>
-                                <Menu 
-                                submited={submited} 
+                                <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
@@ -191,7 +161,7 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <Textform que_id={que_id} response={submited[que_id]} onformSubmit={handleTextChange}/>
+                                <Textform que_id={que_id}/>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Results</Button> 
                                 </div>
@@ -207,8 +177,7 @@ const Question = () => {
                             
                             <div className="">
                                 <h2>Navigation</h2>
-                                <Menu 
-                                submited={submited} 
+                                <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
@@ -231,7 +200,7 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <Textform que_id={que_id} response={submited[que_id]} onformSubmit={handleTextChange}/>
+                                <Textform que_id={que_id}/>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button> 
                                 </div>
@@ -248,7 +217,6 @@ const Question = () => {
                             <div className="">
                                 <h2>Navigation</h2>
                                 <Menu 
-                                submited={submited} 
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
@@ -274,15 +242,14 @@ const Question = () => {
                             <Col xs={8} className="form">
                                 <Image src={require('../img/Quakestar_280px.png')}/>
                                 <p>Congratulations you have finished the questionnaire</p>
-                                <Results submited={submited} floor_id={floor_id} que_id={que_id} doc_id={doc_id}/>
+                                <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id}/>
                             </Col>
                             <Col xs={1}>
                             </Col>
                             <Col>
                             <div className="">
                                 <h2>Navigation</h2>
-                                <Menu 
-                                submited={submited} 
+                                <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
@@ -302,7 +269,7 @@ const Question = () => {
     
 }
 
-const Menu = ({floor_id, que_id, doc_id, submited}) => {
+const Menu = ({floor_id, que_id, doc_id}) => {
 
     const floor = Questiondata[floor_id]
     
@@ -332,13 +299,13 @@ const Menu = ({floor_id, que_id, doc_id, submited}) => {
                     )
                     
                 }
-                if (submited[item+1] === undefined ) {
+                if (localStorage.getItem(item+1) === undefined ) {
                     return (
                         <ListGroup.Item variant="danger" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}>{item+1}:  {index}</ListGroup.Item>       
                     )
                     
                 }
-                if (submited[item+1] != 0) {
+                if (localStorage.getItem(item+1) != 0) {
                     return (
                         <ListGroup.Item variant="success" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}>{item+1}:  {index}</ListGroup.Item>       
                     )

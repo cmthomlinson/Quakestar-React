@@ -8,35 +8,27 @@ import { Questiondata } from "../questions";
 import ImgStrength from "./ImgStrength";
 import ImgDamage from "./ImgDamage";
 
-const Optionform = ({que_id, onformSubmit, response}) => {
-    const [option, setOption] = useState();
-    const [submitted, setSubmitted] = useState(false);
-  
 
-    const { floor_id, doc_id } = useParams();
+const get_options = (que_id, floor_id) => {
     const question = Questiondata[floor_id][que_id];
-    
-   
-
-    
-    function get_options(response) {
-        const options = question.options
-        if (response != 0) {
-            options.splice(0, 0, response)
-            let updated_options = [...new Set(options)];
-            return updated_options
-        }
-        else{
-            return options
-        }
+    const options = question.options
+    if (localStorage.getItem(que_id) != 0) {
+        options.splice(0, 0, localStorage.getItem(que_id))
+        let updated_options = [...new Set(options)];
+        return updated_options
     }
+    else {
+        return options
+    }
+}
 
-    const options = get_options(response)
-    
-    console.log(options)
- 
+
+const Optionform = ({que_id}) => {
+    const { floor_id, doc_id } = useParams();
+    const [value, setValue] = useState(localStorage.getItem(que_id));
     const [isLoading, setIsLoading] = useState(false);
     const [items, setItems] = useState([]);
+    const question = Questiondata[floor_id][que_id];
 
     function getscoreanddamage(floor_id, doc_id) {
         
@@ -46,10 +38,10 @@ const Optionform = ({que_id, onformSubmit, response}) => {
           .then(
             (result) => {
                 setItems(result)
-                setIsLoading(false);
+                setIsLoading(false)
             },
             (error) => {
-                setIsLoading(false);
+                setIsLoading(false)
     
             }
         )
@@ -57,18 +49,18 @@ const Optionform = ({que_id, onformSubmit, response}) => {
 
     useEffect(() => {
         getscoreanddamage(floor_id, doc_id)
-    }, [])
-
+    }, []);
 
     const handleSubmit = e => {
         setIsLoading(true)
         e.preventDefault();
+
+        localStorage.setItem(que_id, value)
         
         const body = { post: {
-            "response": option
+            "response": value
         }}
 
-        onformSubmit(option, que_id)
 
         const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
@@ -105,8 +97,8 @@ const Optionform = ({que_id, onformSubmit, response}) => {
             <p>{question.description}</p>
             <Form onSubmit={handleSubmit}>
             <Form.Group>
-                <Form.Select aria-label="Default select example" onChange={e => setOption(e.target.value)} value={option}>
-                    {options.map((option) => <option value={option}>{option}</option>)}
+                <Form.Select aria-label="Default select example" onChange={e => setValue(e.target.value)}>
+                    {get_options(que_id, floor_id).map((option) => <option value={option}>{option}</option>)}
                 </Form.Select>
             </Form.Group>
                 <br />

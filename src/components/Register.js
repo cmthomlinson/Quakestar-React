@@ -5,7 +5,14 @@ import { useForm } from "react-hook-form";
 
 import { useHistory } from "react-router-dom";
 
+import { Questiondata } from '../questions';
 // Validation
+
+function submitContruct(floor_id) {
+    const floor = Questiondata[floor_id]
+    for(var i in floor)
+        localStorage.setItem(i, 0)
+}
 
 const Register = () => {
     const history = useHistory();
@@ -25,6 +32,7 @@ const Register = () => {
     const handleSubmit = e => {
         e.preventDefault();
         setIsLoading(true);
+        submitContruct(floor_id)
         const body = { user: {
             "name": name,
             "email": email,

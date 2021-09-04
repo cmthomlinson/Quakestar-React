@@ -9,6 +9,7 @@ import Question from "./components/Question";
 import Home from "./components/Home";
 import Register from "./components/Register";
 import Admin from "./components/Admin";
+import Test from './components/Test';
 
 import './style.css'
 
@@ -46,8 +47,13 @@ function App() {
             <Route path="/question/:floor_id/:que_id/:doc_id">
               <Question />
             </Route>
+            <Route path="/test/:floor_id/:que_id">
+              <Test />
+            </Route>
             <Route path="/admin">
               <Admin />
+            <Route/>
+
             </Route>
           </Switch>
 
