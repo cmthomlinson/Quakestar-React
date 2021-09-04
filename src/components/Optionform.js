@@ -29,7 +29,7 @@ const Optionform = ({que_id}) => {
     const [isLoading, setIsLoading] = useState(false);
     const [items, setItems] = useState([]);
     const question = Questiondata[floor_id][que_id];
-
+    const options = question.options
     function getscoreanddamage(floor_id, doc_id) {
         
         const url = "https://quakestar.herokuapp.com/sd/" + floor_id + "/" + doc_id
@@ -98,7 +98,7 @@ const Optionform = ({que_id}) => {
             <Form onSubmit={handleSubmit}>
             <Form.Group>
                 <Form.Select aria-label="Default select example" onChange={e => setValue(e.target.value)}>
-                    {get_options(que_id, floor_id).map((option) => <option value={option}>{option}</option>)}
+                    {get_options(que_id, floor_id).map((option) => <option key={option} value={option}>{option}</option>)}
                 </Form.Select>
             </Form.Group>
                 <br />
