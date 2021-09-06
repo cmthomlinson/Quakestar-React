@@ -1,27 +1,57 @@
 import React, { Component }  from 'react';
 import { useParams, Link } from "react-router";
 import { Questiondata } from "../questions";
-import { Container, Row, Col, Button, ListGroup, Image, Alert } from 'react-bootstrap'
-import { useState } from "react";
+import { Container, Row, Col, Button, ListGroup, Image, Badge } from 'react-bootstrap'
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+
 
 import Optionform from "./Optionform";
 import Textform from "./Textform";
 import Picture from "./Picture";
 import Results from "./Results";
+import ImgStrength from "./ImgStrength";
+import ImgDamage from "./ImgDamage";
+import Topalert from './Topalert';
+
+
 
 const Question = () => {
 
     const { floor_id, que_id, doc_id } = useParams();
     const [isLoading, setIsLoading] = useState(false);
-
-
+    const [response, setResponse] = useState(localStorage.getItem(que_id));
+    const [colour, setColour] = useState('primary');
+    const [show, setShow] = useState(false);
+    const [items, setItems] = useState([]);
     const history = useHistory();
+
+    function getscoreanddamage(floor_id, doc_id) {
+        
+        const url = "https://quakestar.herokuapp.com/sd/" + floor_id + "/" + doc_id
+        fetch(url)
+          .then(res => res.json())
+          .then(
+            (result) => {
+                setItems(result)
+                setIsLoading(false)
+            },
+            (error) => {
+                setIsLoading(false)
+    
+            }
+        )
+    }
+
+    useEffect(() => {
+        getscoreanddamage(floor_id, doc_id)
+    }, [response]);
+
+    
     
     const nextQue = e => {
         setIsLoading(true)
-        getdoc(floor_id, doc_id)
-        
+
         setIsLoading(false)
         const next_que = parseInt(que_id) + 1
         const next_route = "/question/" + floor_id + "/" + next_que + "/" + doc_id
@@ -31,45 +61,12 @@ const Question = () => {
 
     const prevQue = e => {
         setIsLoading(false)
-        getdoc(floor_id, doc_id)
+       
         const prev_que = parseInt(que_id) - 1
         const prev_route = "/question/" + floor_id + "/" + prev_que + "/" + doc_id
         history.push(prev_route)
 
     };
-
-
-
-    
-
-    function getdoc(floor_id, doc_id) {
-        
-        const url = "https://quakestar.herokuapp.com/doc/" + floor_id + "/" + doc_id
-        fetch(url)
-          .then(res => res.json())
-          .then(
-            (result) => {
-    
-                setIsLoading(false);
-            },
-            (error) => {
-                setIsLoading(false);
-    
-            }
-        )
-    }
-
-    function get_all_submitted(submited, floor_id, que_id, doc_id) {
-        const que_url = que_id + 1
-        for (const i in submited) {
-            if (submited[i] === 0) {
-                return <Alert>You have not completed a question</Alert>
-            }
-        }
-        history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)
-
-    }
-
 
     const question = Questiondata[floor_id][que_id]
 
@@ -79,10 +76,18 @@ const Question = () => {
                 <div className="Question">
                     <div>
                         <Row>
+                            <Topalert show={show} setShow={setShow}/>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                             
-                                <Optionform que_id={que_id}/>
+                                <div className="form">
+                                    <h2>Strength: { items.score }</h2>
+                                    <ImgStrength score={ items.score }/>
+                                    <h2>Damage: { items.damage }</h2>
+                                    <ImgDamage damage={ items.damage }/>
+                                    <h2>{que_id}: {question.question}</h2>
+                                    <p>{question.description}</p>
+                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour}/>
+                                </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
                                 </div>
@@ -93,11 +98,13 @@ const Question = () => {
                             <Col>
 
                             <div className="">
-                                <h1 className="">Menu</h1>
+                                <h2 className="">Navigation</h2>
                                 <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
+                                colour={colour}
+                                set_show={setShow}
                                 />
                             </div>
                             </Col>
@@ -119,9 +126,18 @@ const Question = () => {
                 <Container>
                     <div>
                         <Row>
+                            <Topalert show={show} setShow={setShow}/>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <Optionform que_id={que_id}/>
+                                <div className="form">
+                                    <h2>Strength: { items.score }</h2>
+                                    <ImgStrength score={ items.score }/>
+                                    <h2>Damage: { items.damage }</h2>
+                                    <ImgDamage damage={ items.damage }/>
+                                    <h2>{que_id}: {question.question}</h2>
+                                    <p>{question.description}</p>
+                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour}/>
+                                </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
                                     
@@ -130,6 +146,7 @@ const Question = () => {
                                     <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
                                 </div>
                                 <Picture floor_id={floor_id} que_id={que_id}/>
+                      
                             </Col>
                             <Col xs={1}>
                             </Col>
@@ -140,6 +157,8 @@ const Question = () => {
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
+                                colour={colour}
+                                set_show={setShow}
                                 />
                             </div>
                             </Col>
@@ -161,7 +180,16 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <Textform que_id={que_id}/>
+                                <div className="form">
+                                    <h2>Strength: { items.score }</h2>
+                                    <ImgStrength score={ items.score }/>
+                                    <h2>Damage: { items.damage }</h2>
+                                    <ImgDamage damage={ items.damage }/>
+                                    <h2>{que_id}: {question.question}</h2>
+                                    <p>{question.description}</p>
+                                    <Textform que_id={que_id}/>
+                                </div>
+                                
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Results</Button> 
                                 </div>
@@ -181,6 +209,7 @@ const Question = () => {
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
+                                colour={colour}
                                 />
                             </div>
                             </Col>
@@ -200,7 +229,15 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <Textform que_id={que_id}/>
+                                <div className="form">
+                                    <h2>Strength: { items.score }</h2>
+                                    <ImgStrength score={ items.score }/>
+                                    <h2>Damage: { items.damage }</h2>
+                                    <ImgDamage damage={ items.damage }/>
+                                    <h2>{que_id}: {question.question}</h2>
+                                    <p>{question.description}</p>
+                                    <Textform que_id={que_id}/>
+                                </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button> 
                                 </div>
@@ -220,6 +257,7 @@ const Question = () => {
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
+                                colour={colour}
                                 />
                             </div>
                             </Col>
@@ -236,13 +274,21 @@ const Question = () => {
             <div className="Results">
                 <Container>
                     <div>
-                        <Row>
-                            
-                            <h2>Results</h2>
-                            <Col xs={8} className="form">
+                        <Row>   
+                            <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p>Congratulations you have finished the questionnaire</p>
-                                <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id}/>
+                                <div class="text-center" >
+                                    
+                                    <div class="form">
+                                        <h1>Results</h1>
+                                        <p>Congratulations you have finished the questionnaire</p>
+                                        <br />
+                                        <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id}/>
+                                        
+                                        
+                                    </div>
+                                </div>
+
                             </Col>
                             <Col xs={1}>
                             </Col>
@@ -253,6 +299,7 @@ const Question = () => {
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
+                                colour={colour}
                                 />
                             </div>
                             </Col>
@@ -269,7 +316,7 @@ const Question = () => {
     
 }
 
-const Menu = ({floor_id, que_id, doc_id}) => {
+const Menu = ({floor_id, que_id, doc_id, colour, setShow}) => {
 
     const floor = Questiondata[floor_id]
     
@@ -282,17 +329,31 @@ const Menu = ({floor_id, que_id, doc_id}) => {
     }
     
 
+    
     return(
         <ListGroup>
             {res.map((index, item)=>{
                 const que_url = item+1
-                
-                if (parseInt(que_id) === que_url && que_id != Object.keys(Questiondata[floor_id]).length) {
+
+                if (localStorage.getItem(item+1) != 0 && parseInt(que_id) === que_url)  {
+                    return (
+                        <ListGroup.Item variant="success" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}><b>{item+1}:  {index}</b></ListGroup.Item>       
+                    )
+                    
+                }
+                if (parseInt(que_id) === Object.keys(Questiondata[floor_id]).length && parseInt(item+1) === Object.keys(Questiondata[floor_id]).length) {
+                    return (
+                        <ListGroup.Item variant="info" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}><b>Results</b></ListGroup.Item>       
+                    )
+                    
+                }
+                if (parseInt(que_id) === que_url && que_id !== Object.keys(Questiondata[floor_id]).length) {
                     
                     return (
-                        <ListGroup.Item variant="primary" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}>{item+1}:  {index}</ListGroup.Item>       
+                        <ListGroup.Item variant={colour} action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}><b>{item+1}:  {index}</b></ListGroup.Item>       
                     )
                 }
+
                 if (parseInt(item+1) === Object.keys(Questiondata[floor_id]).length) {
                     return (
                         <ListGroup.Item variant="info" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}>Results</ListGroup.Item>       

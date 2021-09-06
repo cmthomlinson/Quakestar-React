@@ -44,6 +44,7 @@ const Register = () => {
         }}
 
         const url = 'https://quakestar.herokuapp.com/register/' +  body['user']['floor_id']
+        localStorage.setItem('user', body['user'])
 
         fetch(url, {
             method: 'POST',
@@ -126,8 +127,9 @@ const Register = () => {
                             onChange={e => setPostcode(e.target.value)}
                         />
                     </Form.Group>
+                    <br />
                     <Form.Group size="lg" controlId="Floor id" required>
-                        <Form.Label>Floors</Form.Label>
+                        <Form.Label><b>Floors</b> - How many floors does your property have?</Form.Label>
                         <Form.Select onChange={e => setfloor_id(e.target.value)}>
                             <option id="1" value="1">1 Floor</option>
                             <option id="2" value="2">2 Floors</option>

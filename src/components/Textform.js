@@ -8,28 +8,14 @@ import { Form, Button } from 'react-bootstrap'
 import ImgStrength from "./ImgStrength";
 import ImgDamage from "./ImgDamage";
 
-const useStateWithLocalStorage = que_id => {
-    const [value, setValue] = React.useState({
-            x: "",
-            y: ""
-        }
-    );
-   
-    React.useEffect(() => {
-      localStorage.setItem(que_id, {
-            'x': value['x'],
-            'y': value['y']
-      });
-    }, [value]);
-   
-    return [value, setValue];
-};
-
-const Textform = ({que_id, onformSubmit, response}) => {
+const Textform = ({que_id}) => {
     const { floor_id, doc_id } = useParams();
 
     const question = Questiondata[floor_id][que_id]
-    const [value, setValue] = useStateWithLocalStorage(que_id);
+    const [value, setValue] = useState({
+        x: localStorage.getItem(que_id).x || "",
+        y: localStorage.getItem(que_id).y || ""
+    });
 
     const [isLoading, setIsLoading] = useState(false);
     const [items, setItems] = useState([]);
@@ -55,13 +41,11 @@ const Textform = ({que_id, onformSubmit, response}) => {
         getscoreanddamage(floor_id, doc_id)
     }, [])
 
-
     
 
     const handleSubmit = e => {
         e.preventDefault();
         setIsLoading(true);
-        
         const body = { post: {
             "response": {
                 "x": parseInt(value.x),
@@ -69,7 +53,9 @@ const Textform = ({que_id, onformSubmit, response}) => {
             }
         }}
 
-        console.log(value['x'])
+        localStorage.setItem(que_id, JSON.stringify(value))
+        const x = JSON.parse(localStorage.getItem(que_id))
+        console.log(x["x"])
 
         const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
@@ -94,13 +80,7 @@ const Textform = ({que_id, onformSubmit, response}) => {
     }
 
     return (
-        <div className="form">
-            <h2>Strength: { items.score }</h2>
-            <ImgStrength score={ items.score }/>
-            <h2>Damage: { items.damage }</h2>
-            <ImgDamage damage={ items.damage }/>
-            <h2>{que_id}: {question.question}</h2>
-            <p>{question.description}</p>
+        <div>
             <Form onSubmit={handleSubmit}>
                 <Form.Group>
                 <Form.Label>X-direction</Form.Label>
@@ -109,7 +89,6 @@ const Textform = ({que_id, onformSubmit, response}) => {
                 <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, y: e.target.value}))}/>
                 </Form.Group>
                 <br />
-                <p>{value.x} {value.y}</p>
                 <Button
                     variant="primary"
                     type="submit"

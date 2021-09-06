@@ -5,8 +5,6 @@ import { useParams } from "react-router";
 
 import { Questiondata } from "../questions";
 
-import ImgStrength from "./ImgStrength";
-import ImgDamage from "./ImgDamage";
 
 
 const get_options = (que_id, floor_id) => {
@@ -23,46 +21,29 @@ const get_options = (que_id, floor_id) => {
 }
 
 
-const Optionform = ({que_id}) => {
+const Optionform = ({que_id, set_res, set_colour}) => {
     const { floor_id, doc_id } = useParams();
     const [value, setValue] = useState(localStorage.getItem(que_id));
     const [isLoading, setIsLoading] = useState(false);
-    const [items, setItems] = useState([]);
     const question = Questiondata[floor_id][que_id];
-    const options = question.options
-    function getscoreanddamage(floor_id, doc_id) {
-        
-        const url = "https://quakestar.herokuapp.com/sd/" + floor_id + "/" + doc_id
-        fetch(url)
-          .then(res => res.json())
-          .then(
-            (result) => {
-                setItems(result)
-                setIsLoading(false)
-            },
-            (error) => {
-                setIsLoading(false)
-    
-            }
-        )
-    }
 
     useEffect(() => {
-        getscoreanddamage(floor_id, doc_id)
-    }, []);
+        set_colour('primary')
+    }, [que_id]);
 
     const handleSubmit = e => {
-        setIsLoading(true)
+        setIsLoading(true);
         e.preventDefault();
-
-        localStorage.setItem(que_id, value)
+        set_res(value);
+        set_colour('success')
+        localStorage.setItem(que_id, value);
         
         const body = { post: {
             "response": value
-        }}
+        }};
 
-
-        const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
+        
+        const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id;
 
         fetch(post_url, {
         method: 'POST',
@@ -74,12 +55,14 @@ const Optionform = ({que_id}) => {
         .then(response => response.json())
         .then(data => {
  
-            getscoreanddamage(floor_id, doc_id)
+       
+            setIsLoading(false)
             console.log('Success:', data)
             
         })
         .catch((error) => {
-            getscoreanddamage(floor_id, doc_id)
+            
+            setIsLoading(false)
             console.error('Error:', error);
         });
         
@@ -88,13 +71,8 @@ const Optionform = ({que_id}) => {
 
     
     return(
-        <div className="form">
-            <h2>Strength: { items.score }</h2>
-            <ImgStrength score={ items.score }/>
-            <h2>Damage: { items.damage }</h2>
-            <ImgDamage damage={ items.damage }/>
-            <h2>{que_id}: {question.question}</h2>
-            <p>{question.description}</p>
+        <div>
+
             <Form onSubmit={handleSubmit}>
             <Form.Group>
                 <Form.Select aria-label="Default select example" onChange={e => setValue(e.target.value)}>
