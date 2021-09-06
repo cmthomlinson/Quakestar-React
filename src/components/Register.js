@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 import { useState } from "react";
-import { Form, Button, Container } from 'react-bootstrap'
-import { useForm } from "react-hook-form";
+import { Form, Button, Container, Image } from 'react-bootstrap'
+
 
 import { useHistory } from "react-router-dom";
 
@@ -70,6 +70,9 @@ const Register = () => {
     return(
         <div className="Question">
             <Container>
+                <div class="text-center">
+                    <Image src={require('../img/Quakestar_280px.png')}/>
+                </div>
                 <h1>Start Questionnaire</h1>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group size="lg" controlId="firstName" required>
