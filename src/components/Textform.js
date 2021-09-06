@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 import { Questiondata } from "../questions";
 import { Form, Button } from 'react-bootstrap'
 
-import ImgStrength from "./ImgStrength";
-import ImgDamage from "./ImgDamage";
+
+
 
 const Textform = ({que_id}) => {
     const { floor_id, doc_id } = useParams();
@@ -18,30 +18,15 @@ const Textform = ({que_id}) => {
     });
 
     const [isLoading, setIsLoading] = useState(false);
-    const [items, setItems] = useState([]);
-
-    function getscoreanddamage(floor_id, doc_id) {
-        
-        const url = "https://quakestar.herokuapp.com/sd/" + floor_id + "/" + doc_id
-        fetch(url)
-          .then(res => res.json())
-          .then(
-            (result) => {
-                setItems(result)
-                setIsLoading(false);
-            },
-            (error) => {
-                setIsLoading(false);
-    
-            }
-        )
-    }
 
     useEffect(() => {
-        getscoreanddamage(floor_id, doc_id)
-    }, [])
+        setValue({
+            x: JSON.parse(localStorage.getItem(que_id)).x || "",
+            y: JSON.parse(localStorage.getItem(que_id)).y || ""
+        })
+    }, [que_id])
 
-    
+
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -54,8 +39,7 @@ const Textform = ({que_id}) => {
         }}
 
         localStorage.setItem(que_id, JSON.stringify(value))
-        const x = JSON.parse(localStorage.getItem(que_id))
-        console.log(x["x"])
+        
 
         const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
@@ -84,9 +68,9 @@ const Textform = ({que_id}) => {
             <Form onSubmit={handleSubmit}>
                 <Form.Group>
                 <Form.Label>X-direction</Form.Label>
-                <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, x: e.target.value}))}/>
+                <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, x: e.target.value}))} value={value['x']}/>
                 <Form.Label>Y-direction</Form.Label>
-                <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, y: e.target.value}))}/>
+                <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, y: e.target.value}))} value={value['y']}/>
                 </Form.Group>
                 <br />
                 <Button
