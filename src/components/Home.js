@@ -14,7 +14,7 @@ const Home = () => {
                     <Image src={require('../img/Quakestar_sql.png')}/>
                     <br />
                     <br />
-                    <h2>Welcome to QuakeStar House Check</h2>
+                    <h2>Welcome to QuakeStar HouseCheck</h2>
                     <p>To start, click the button below, fill in your details and begin answering the questions</p>
                     <Button onClick={() => history.push('register')}>Start HouseCheck</Button>
                 </div>
