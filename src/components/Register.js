@@ -10,6 +10,7 @@ import { Questiondata } from '../questions';
 
 function submitContruct(floor_id) {
     const floor = Questiondata[floor_id]
+    localStorage.clear();
     for(var i in floor)
         localStorage.setItem(i, 0)
 }

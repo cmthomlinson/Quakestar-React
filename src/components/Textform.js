@@ -8,7 +8,7 @@ import { Form, Button } from 'react-bootstrap'
 
 
 
-const Textform = ({que_id}) => {
+const Textform = ({que_id, setShow}) => {
     const { floor_id, doc_id } = useParams();
 
     const question = Questiondata[floor_id][que_id]
@@ -24,9 +24,19 @@ const Textform = ({que_id}) => {
             x: JSON.parse(localStorage.getItem(que_id)).x || "",
             y: JSON.parse(localStorage.getItem(que_id)).y || ""
         })
+        setShow(false)
     }, [que_id])
 
+    const check_submitted = (que_id) => {
+        if (value != 0) {
+            
+            setShow(true)
 
+        }
+        else {
+            setShow(false)
+        }
+    }
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -39,7 +49,7 @@ const Textform = ({que_id}) => {
         }}
 
         localStorage.setItem(que_id, JSON.stringify(value))
-        
+        check_submitted(que_id)
 
         const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 

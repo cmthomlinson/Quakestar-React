@@ -21,21 +21,53 @@ const get_options = (que_id, floor_id) => {
 }
 
 
-const Optionform = ({que_id, set_res, set_colour}) => {
+const Optionform = ({que_id, set_res, set_colour, setShow}) => {
     const { floor_id, doc_id } = useParams();
-    const [value, setValue] = useState(localStorage.getItem(que_id));
-    const [isLoading, setIsLoading] = useState(false);
     const question = Questiondata[floor_id][que_id];
+    const options = question.options
+    const [value, setValue] = useState(localStorage.getItem(que_id));
+    const [new_options, setNew_options] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    
+
+    const get_options = (que_id, floor_id) => {
+
+        if (localStorage.getItem(que_id) != 0) {
+
+            options.splice(0, 0, localStorage.getItem(que_id))
+            let updated_options = [...new Set(options)];
+            setNew_options(updated_options)
+            
+
+        }
+        else {
+            setNew_options(options)
+        }
+    }
+
+    const check_submitted = (que_id) => {
+        if (value != 0) {
+            
+            setShow(true)
+
+        }
+        else {
+            setShow(false)
+        }
+    }
 
     useEffect(() => {
-        set_colour('primary')
+        set_colour('primary');
+        setValue(localStorage.getItem(que_id));
+        get_options(que_id, floor_id);
+        setShow(false)
     }, [que_id]);
 
     const handleSubmit = e => {
         setIsLoading(true);
         e.preventDefault();
         set_res(value);
-        set_colour('success')
+        check_submitted(que_id)
         localStorage.setItem(que_id, value);
         
         const body = { post: {
@@ -76,7 +108,7 @@ const Optionform = ({que_id, set_res, set_colour}) => {
             <Form onSubmit={handleSubmit}>
             <Form.Group>
                 <Form.Select aria-label="Default select example" onChange={e => setValue(e.target.value)}>
-                    {get_options(que_id, floor_id).map((option) => <option key={option} value={option}>{option}</option>)}
+                    {new_options.map((option, index) => <option key={option} value={option}>{option}</option>)}
                 </Form.Select>
             </Form.Group>
                 <br />

@@ -76,7 +76,7 @@ const Question = () => {
                 <div className="Question">
                     <div>
                         <Row>
-                            <Topalert show={show} setShow={setShow}/>
+                            
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
                                 <div className="form">
@@ -86,7 +86,7 @@ const Question = () => {
                                     <ImgDamage damage={ items.damage }/>
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour}/>
+                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow}/>
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
@@ -96,7 +96,7 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-
+                            <Topalert show={show} setShow={setShow} response={response}/>
                             <div className="">
                                 <h2 className="">Navigation</h2>
                                 <Menu
@@ -126,7 +126,7 @@ const Question = () => {
                 <Container>
                     <div>
                         <Row>
-                            <Topalert show={show} setShow={setShow}/>
+                            
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
                                 <div className="form">
@@ -136,7 +136,7 @@ const Question = () => {
                                     <ImgDamage damage={ items.damage }/>
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour}/>
+                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow}/>
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
@@ -151,6 +151,7 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
+                            <Topalert show={show} setShow={setShow} response={response}/>
                             <div className="">
                                 <h2>Navigation</h2>
                                 <Menu
@@ -187,7 +188,7 @@ const Question = () => {
                                     <ImgDamage damage={ items.damage }/>
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Textform que_id={que_id}/>
+                                    <Textform que_id={que_id}  setShow={setShow}/>
                                 </div>
                                 
                                 <div className="next-button">
@@ -202,7 +203,7 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            
+                            <Topalert show={show} setShow={setShow} response={response}/>
                             <div className="">
                                 <h2>Navigation</h2>
                                 <Menu
@@ -227,6 +228,7 @@ const Question = () => {
                 <Container>
                     <div>
                         <Row>
+                            
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
                                 <div className="form">
@@ -236,7 +238,7 @@ const Question = () => {
                                     <ImgDamage damage={ items.damage }/>
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Textform que_id={que_id}/>
+                                    <Textform que_id={que_id} setShow={setShow}/>
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button> 
@@ -250,7 +252,7 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            
+                            <Topalert show={show} setShow={setShow} response={response}/>
                             <div className="">
                                 <h2>Navigation</h2>
                                 <Menu 
@@ -350,7 +352,7 @@ const Menu = ({floor_id, que_id, doc_id, colour, setShow}) => {
                 if (parseInt(que_id) === que_url && que_id !== Object.keys(Questiondata[floor_id]).length) {
                     
                     return (
-                        <ListGroup.Item variant={colour} action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}><b>{item+1}:  {index}</b></ListGroup.Item>       
+                        <ListGroup.Item variant="primary" action onClick={() => history.push("/question/" + floor_id + "/" + que_url + "/" + doc_id)}><b>{item+1}:  {index}</b></ListGroup.Item>       
                     )
                 }
 
