@@ -25,7 +25,7 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
     const { floor_id, doc_id } = useParams();
     const question = Questiondata[floor_id][que_id];
     const options = question.options
-    const [value, setValue] = useState(localStorage.getItem(que_id));
+    const [value, setValue] = useState(options[0]);
     const [new_options, setNew_options] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     
@@ -33,11 +33,9 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
     const get_options = (que_id, floor_id) => {
 
         if (localStorage.getItem(que_id) != 0) {
-
             options.splice(0, 0, localStorage.getItem(que_id))
             let updated_options = [...new Set(options)];
             setNew_options(updated_options)
-            
 
         }
         else {
@@ -58,7 +56,7 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
 
     useEffect(() => {
         set_colour('primary');
-        setValue(localStorage.getItem(que_id));
+        setValue(options[0]);
         get_options(que_id, floor_id);
         setShow(false)
     }, [que_id]);
