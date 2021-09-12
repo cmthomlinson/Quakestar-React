@@ -7,7 +7,7 @@ const Topalert = ({show, setShow, response}) => {
         return (
             <Alert variant="success" onClose={() => setShow(false)} dismissible>
             <Alert.Heading>Submitted</Alert.Heading>
-
+            <p>{ response }</p>
           </Alert>
         )
     }

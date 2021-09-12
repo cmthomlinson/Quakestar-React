@@ -188,7 +188,7 @@ const Question = () => {
                                     <ImgDamage damage={ items.damage }/>
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Textform que_id={que_id}  setShow={setShow}/>
+                                    <Textform que_id={que_id} set_res={setResponse} setShow={setShow}/>
                                 </div>
                                 
                                 <div className="next-button">
@@ -238,7 +238,7 @@ const Question = () => {
                                     <ImgDamage damage={ items.damage }/>
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Textform que_id={que_id} setShow={setShow}/>
+                                    <Textform que_id={que_id}  set_res={setResponse} setShow={setShow}/>
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button> 

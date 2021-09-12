@@ -58,15 +58,16 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
         set_colour('primary');
         setValue(options[0]);
         get_options(que_id, floor_id);
-        setShow(false)
+        set_res(" ");
+        setShow(false);
     }, [que_id]);
 
     const handleSubmit = e => {
         setIsLoading(true);
         e.preventDefault();
-        set_res(value);
+        
         check_submitted(que_id)
-        localStorage.setItem(que_id, value);
+        
         
         const body = { post: {
             "response": value
@@ -85,7 +86,8 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
         .then(response => response.json())
         .then(data => {
  
-       
+            set_res(value);
+            localStorage.setItem(que_id, value)
             setIsLoading(false)
             console.log('Success:', data)
             
@@ -95,6 +97,7 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
             setIsLoading(false)
             console.error('Error:', error);
         });
+        
         
     }
 
