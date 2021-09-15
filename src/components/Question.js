@@ -13,7 +13,7 @@ import Results from "./Results";
 import ImgStrength from "./ImgStrength";
 import ImgDamage from "./ImgDamage";
 import Topalert from './Topalert';
-
+import Resalert from './Resalert';
 
 
 const Question = () => {
@@ -23,6 +23,7 @@ const Question = () => {
     const [response, setResponse] = useState(localStorage.getItem(que_id));
     const [colour, setColour] = useState('primary');
     const [show, setShow] = useState(false);
+    const [alert, setAlert] = useState(false);
     const [items, setItems] = useState([]);
     const history = useHistory();
 
@@ -76,7 +77,7 @@ const Question = () => {
                 <div className="Question">
                     <div>
                         <Row>
-                            
+                            <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
                                 <div className="form">
@@ -86,7 +87,7 @@ const Question = () => {
                                     <ImgDamage damage={ items.damage }/>
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow}/>
+                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
@@ -96,7 +97,7 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            <Topalert show={show} setShow={setShow} response={response}/>
+                            <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
                                 <h2 className="">Navigation</h2>
                                 <Menu
@@ -126,7 +127,7 @@ const Question = () => {
                 <Container>
                     <div>
                         <Row>
-                            
+                            <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
                                 <div className="form">
@@ -136,7 +137,7 @@ const Question = () => {
                                     <ImgDamage damage={ items.damage }/>
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow}/>
+                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
@@ -151,7 +152,7 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            <Topalert show={show} setShow={setShow} response={response}/>
+                            <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
                                 <h2>Navigation</h2>
                                 <Menu
@@ -203,7 +204,7 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            <Topalert show={show} setShow={setShow} response={response}/>
+                            <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
                                 <h2>Navigation</h2>
                                 <Menu
@@ -252,7 +253,7 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            <Topalert show={show} setShow={setShow} response={response}/>
+                            <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
                                 <h2>Navigation</h2>
                                 <Menu 

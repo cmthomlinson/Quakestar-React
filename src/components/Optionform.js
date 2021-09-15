@@ -10,18 +10,14 @@ import { Questiondata } from "../questions";
 const get_options = (que_id, floor_id) => {
     const question = Questiondata[floor_id][que_id];
     const options = question.options
-    if (localStorage.getItem(que_id) != 0) {
-        options.splice(0, 0, localStorage.getItem(que_id))
-        let updated_options = [...new Set(options)];
-        return updated_options
-    }
-    else {
-        return options
-    }
+    options.splice(0, 0, "Please select an option")
+    let updated_options = [...new Set(options)];
+    return updated_options
+
 }
 
 
-const Optionform = ({que_id, set_res, set_colour, setShow}) => {
+const Optionform = ({que_id, set_res, set_colour, setShow, setAlert}) => {
     const { floor_id, doc_id } = useParams();
     const question = Questiondata[floor_id][que_id];
     const options = question.options
@@ -32,15 +28,10 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
 
     const get_options = (que_id, floor_id) => {
 
-        if (localStorage.getItem(que_id) != 0) {
-            options.splice(0, 0, localStorage.getItem(que_id))
-            let updated_options = [...new Set(options)];
-            setNew_options(updated_options)
-
-        }
-        else {
-            setNew_options(options)
-        }
+        options.splice(0, 0, "Please select an option")
+        let updated_options = [...new Set(options)];
+        setNew_options(updated_options)
+        
     }
 
     const check_submitted = (que_id) => {
@@ -59,6 +50,7 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
         setValue(options[0]);
         get_options(que_id, floor_id);
         set_res(" ");
+        setAlert(false)
         setShow(false);
     }, [que_id]);
 
@@ -67,7 +59,12 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
         e.preventDefault();
         
         check_submitted(que_id)
-        
+
+        if (value === "Please select an option") {
+            setAlert(true)
+            setIsLoading(false)
+            return
+        }
         
         const body = { post: {
             "response": value
@@ -85,7 +82,7 @@ const Optionform = ({que_id, set_res, set_colour, setShow}) => {
         })
         .then(response => response.json())
         .then(data => {
- 
+            setAlert(false)
             set_res(value);
             localStorage.setItem(que_id, value)
             setIsLoading(false)
