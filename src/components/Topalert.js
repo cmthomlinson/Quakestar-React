@@ -17,7 +17,7 @@ const Topalert = ({show, setShow, response, que_id, floor_id}) => {
               </Alert>
             )
         }
-        if (question.current_route === "option_question") {
+        if (question.current_route === "option_question"|| question.current_route === "clad_question") {
             return (
                 <Alert variant="success" onClose={() => setShow(false)} dismissible>
                 <Alert.Heading>Submitted</Alert.Heading>

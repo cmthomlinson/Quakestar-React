@@ -14,6 +14,7 @@ import ImgStrength from "./ImgStrength";
 import ImgDamage from "./ImgDamage";
 import Topalert from './Topalert';
 import Resalert from './Resalert';
+import Info from './Info';
 
 
 const Question = () => {
@@ -99,7 +100,10 @@ const Question = () => {
                             <Col>
                             <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
+                                <Info />
+                                <br/>
                                 <h2 className="">Navigation</h2>
+                                
                                 <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
@@ -154,7 +158,10 @@ const Question = () => {
                             <Col>
                             <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
-                                <h2>Navigation</h2>
+                                <Info />
+                                <br/>
+                                <h2 className="">Navigation</h2>
+                                
                                 <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
@@ -206,12 +213,16 @@ const Question = () => {
                             <Col>
                             <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
-                                <h2>Navigation</h2>
+                                <Info />
+                                <br/>
+                                <h2 className="">Navigation</h2>
+                                
                                 <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
                                 colour={colour}
+                                set_show={setShow}
                                 />
                             </div>
                             </Col>
@@ -255,12 +266,16 @@ const Question = () => {
                             <Col>
                             <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
-                                <h2>Navigation</h2>
-                                <Menu 
+                                <Info />
+                                <br/>
+                                <h2 className="">Navigation</h2>
+                                
+                                <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
                                 colour={colour}
+                                set_show={setShow}
                                 />
                             </div>
                             </Col>
@@ -297,12 +312,16 @@ const Question = () => {
                             </Col>
                             <Col>
                             <div className="">
-                                <h2>Navigation</h2>
+                                <Info />
+                                <br/>
+                                <h2 className="">Navigation</h2>
+                                
                                 <Menu
                                 floor_id={floor_id} 
                                 que_id={que_id} 
                                 doc_id={doc_id}
                                 colour={colour}
+                                set_show={setShow}
                                 />
                             </div>
                             </Col>

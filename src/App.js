@@ -9,7 +9,7 @@ import Question from "./components/Question";
 import Home from "./components/Home";
 import Register from "./components/Register";
 import Admin from "./components/Admin";
-
+import Floorque from './components/Floorque';
 
 import './style.css'
 
@@ -44,6 +44,9 @@ function App() {
             <Route exact path="/register">
               <Register/>
             </Route>
+            <Route exact path="/floorque/">
+              <Floorque/>
+            </Route>
             <Route path="/question/:floor_id/:que_id/:doc_id">
               <Question />
             </Route>
@@ -56,6 +59,8 @@ function App() {
 
         </div>
       </div>
+      <br />
+      
     </Router>
   );
 }

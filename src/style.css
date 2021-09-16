@@ -26,3 +26,7 @@
     white-space: nowrap;
 }
 
+.version {
+
+    float: right;
+}
