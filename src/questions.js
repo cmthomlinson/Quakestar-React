@@ -283,7 +283,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
             current_route: "clad_question",
@@ -728,7 +728,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
             current_route: "clad_question",
@@ -1308,7 +1308,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
             current_route: "clad_question",
@@ -1378,7 +1378,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Second floor cladding",
             current_route: "clad_question",
@@ -1903,7 +1903,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
             current_route: "clad_question",
@@ -2483,7 +2483,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
             current_route: "clad_question",
@@ -2553,7 +2553,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Basement floor cladding",
             current_route: "clad_question",
@@ -3198,7 +3198,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
             current_route: "clad_question",
@@ -3268,7 +3268,7 @@ export const Questiondata = {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
-            options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
+            options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Second floor cladding",
             current_route: "clad_question",

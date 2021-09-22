@@ -12,14 +12,14 @@ const Topalert = ({setShow, que_id, floor_id}) => {
             const submitted_line = "X: " + JSON.parse(localStorage.getItem(que_id)).x +"m" + "  Y: " + JSON.parse(localStorage.getItem(que_id)).y +"m"
             return (
                 <Alert variant="success">
-                <p>Your response: <b>{ submitted_line }</b></p>
+                <p>Your saved response: <b>{ submitted_line }</b></p>
               </Alert>
             )
         }
         if (question.current_route === "option_question"|| question.current_route === "clad_question") {
             return (
                 <Alert variant="success">
-                <p>Your response: <b>{ localStorage.getItem(que_id) }</b></p>
+                <p>Your saved response: <b>{ localStorage.getItem(que_id) }</b></p>
               </Alert>
             )
         }
