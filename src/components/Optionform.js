@@ -4,8 +4,7 @@ import { Form, Button, Alert } from 'react-bootstrap'
 import { useParams } from "react-router";
 
 import { Questiondata } from "../questions";
-
-
+import Topalert from './Topalert';
 
 const get_options = (que_id, floor_id) => {
     const question = Questiondata[floor_id][que_id];
@@ -118,6 +117,9 @@ const Optionform = ({que_id, set_res, set_colour, setShow, setAlert}) => {
                     >
                     {isLoading ? 'Loading…' : 'Submit'}
                 </Button>
+                <br />
+                <br />
+                <Topalert setShow={setShow} que_id={que_id} floor_id={floor_id}/>
             </Form>
         </div>
     )

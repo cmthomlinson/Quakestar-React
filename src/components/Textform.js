@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 
 import { Questiondata } from "../questions";
 import { Form, Button } from 'react-bootstrap'
+import Topalert from './Topalert';
 
 
 
-
-const Textform = ({que_id, setShow, set_res }) => {
+const Textform = ({que_id, setShow, set_res}) => {
     const { floor_id, doc_id } = useParams();
 
     const question = Questiondata[floor_id][que_id]
@@ -82,10 +82,10 @@ const Textform = ({que_id, setShow, set_res }) => {
         <div>
             <Form onSubmit={handleSubmit}>
                 <Form.Group>
-                <Form.Label>X-direction</Form.Label>
-                <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, x: e.target.value}))} value={value['x']}/>
-                <Form.Label>Y-direction</Form.Label>
-                <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, y: e.target.value}))} value={value['y']}/>
+                    <Form.Label>X-direction</Form.Label>
+                    <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, x: e.target.value}))} value={value['x']}/>
+                    <Form.Label>Y-direction</Form.Label>
+                    <Form.Control type="input" onChange={e => setValue(prevState => ({...prevState, y: e.target.value}))} value={value['y']}/>
                 </Form.Group>
                 <br />
                 <Button
@@ -96,8 +96,9 @@ const Textform = ({que_id, setShow, set_res }) => {
                     >
                     {isLoading ? 'Loading…' : 'Submit'}
                 </Button>
-        
-                
+                <br />
+                <br />
+                <Topalert setShow={setShow} que_id={que_id} floor_id={floor_id}/>
             </Form>
      
 

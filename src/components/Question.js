@@ -12,7 +12,6 @@ import Picture from "./Picture";
 import Results from "./Results";
 import ImgStrength from "./ImgStrength";
 import ImgDamage from "./ImgDamage";
-import Topalert from './Topalert';
 import Resalert from './Resalert';
 import Info from './Info';
 
@@ -86,6 +85,8 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <br />
+                                    <br />
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
                                     <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
@@ -98,7 +99,6 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
                                 <Info />
                                 <br/>
@@ -139,6 +139,8 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <br />
+                                    <br />
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
                                     <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
@@ -150,13 +152,13 @@ const Question = () => {
                                 <div className="prev-button">
                                     <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
                                 </div>
+                                
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                       
                             </Col>
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
                                 <Info />
                                 <br/>
@@ -194,9 +196,11 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <br />
+                                    <br />
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Textform que_id={que_id} set_res={setResponse} setShow={setShow}/>
+                                    <Textform que_id={que_id} set_res={setResponse} setShow={setShow} floor_id={floor_id}/>
                                 </div>
                                 
                                 <div className="next-button">
@@ -211,7 +215,6 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
                                 <Info />
                                 <br/>
@@ -248,9 +251,11 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <br />
+                                    <br />
                                     <h2>{que_id}: {question.question}</h2>
                                     <p>{question.description}</p>
-                                    <Textform que_id={que_id}  set_res={setResponse} setShow={setShow}/>
+                                    <Textform que_id={que_id}  set_res={setResponse} setShow={setShow} floor_id={floor_id}/>
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button> 
@@ -264,7 +269,6 @@ const Question = () => {
                             <Col xs={1}>
                             </Col>
                             <Col>
-                            <Topalert show={show} setShow={setShow} response={response} que_id={que_id} floor_id={floor_id}/>
                             <div className="">
                                 <Info />
                                 <br/>

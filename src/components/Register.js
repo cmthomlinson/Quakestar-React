@@ -32,7 +32,7 @@ const Register = () => {
             "address": address,
             "suburb": suburb,
             "city": city,
-            "postcode": postcode,
+            "postcode": postcode
         }}
 
         localStorage.clear();

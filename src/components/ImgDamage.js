@@ -3,7 +3,7 @@ import { Image } from "react-bootstrap"
 
 const ImgDamage = ({damage}) => {
     
-    if (damage > 30) {
+    if (damage > 50) {
         return <Image src={require('../img/1.png')}/>
     }
     if (damage > 30) {

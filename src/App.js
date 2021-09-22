@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import Register from "./components/Register";
 import Admin from "./components/Admin";
 import Floorque from './components/Floorque';
+import Record from './components/Record';
 
 import './style.css'
 
@@ -25,10 +26,13 @@ function App() {
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/register">
-              <Nav.Link>Start</Nav.Link>
+              <Nav.Link>HouseCheck</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/admin">
               <Nav.Link>Admin</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/record">
+              <Nav.Link>myHouseCheck</Nav.Link>
             </LinkContainer>
           </Nav>
         </Container>
@@ -49,6 +53,9 @@ function App() {
             </Route>
             <Route path="/question/:floor_id/:que_id/:doc_id">
               <Question />
+            </Route>
+            <Route path="/record">
+              <Record/>
             </Route>
             <Route path="/admin">
               <Admin />

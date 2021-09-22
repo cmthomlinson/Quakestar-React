@@ -121,7 +121,7 @@ export const Questiondata = {
             options: ["Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete walls"]
         },
         "9": {
-            question: "What structure supports the Roof?",
+            question: "What is the Roof Structure?",
             description: "",
             img: {
                 "title": "",
@@ -129,7 +129,7 @@ export const Questiondata = {
     
             },
             route: "optionform",
-            subject: "Roof support",
+            subject: "Roof structure",
             current_route: "option_question",
             next_route: "option_question",
             row_input: "55",
@@ -164,7 +164,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "89",
             col_input: "5",
-            options: ["None", "Brick", "Block", "Lightweight"]
+            options: ["None ", "Brick ", "Block ", "Lightweight "]
         },
         "12": {
             question: "Do you have any Veneers, if so what is the material?",
@@ -182,7 +182,7 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What is the structure at Ground Floor Level?",
+            question: "What structure (eg columns/walls) supports the Ground Floor?",
             description: "",
             img: {
                 title: "",
@@ -197,7 +197,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
-            question: "What structure supports the Ground Floor?",
+            question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -239,7 +239,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "17": {
             question: "What is the cladding on the roof?",
@@ -506,7 +506,7 @@ export const Questiondata = {
             options: ["Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete walls"]
         },
         "9": {
-            question: "What structure supports the Roof?",
+            question: "What is the Roof Structure?",
             description: "",
             img: {
                 "title": "",
@@ -514,7 +514,7 @@ export const Questiondata = {
     
             },
             route: "optionform",
-            subject: "Roof support",
+            subject: "Roof structure",
             current_route: "option_question",
             next_route: "option_question",
             row_input: "55",
@@ -549,7 +549,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "89",
             col_input: "5",
-            options: ["None", "Brick", "Block", "Lightweight"]
+            options: ["None ", "Brick ", "Block ", "Lightweight "]
         },
         "12": {
             question: "Do you have any Veneers, if so what is the material?",
@@ -567,7 +567,7 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What is the structure at Ground Floor Level?",
+            question: "What structure (eg columns/walls) supports the Ground Floor?",
             description: "",
             img: {
                 title: "",
@@ -582,7 +582,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
-            question: "What structure supports the Ground Floor?",
+            question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -597,7 +597,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "15": {
-            question: "What is the structure at First Floor Level?",
+            question: "What structure (eg columns/walls) supports the First Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -612,7 +612,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
-            question: "What structure supports the First Floor Level?",
+            question: "What is the structure at First Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -654,7 +654,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "19": {
             question: "What are the X-direction bracing walls made of at the First floor?",
@@ -664,7 +664,7 @@ export const Questiondata = {
                 img_name: "Quakestar_280px.png"
             },
             route: "optionform",
-            subject: "First floor Y-direction walls",
+            subject: "First floor X-direction walls",
             current_route: "option_question",
             next_route: "option_question",
             row_input: "54",
@@ -684,7 +684,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "54",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "21": {
             question: "What is the cladding on the roof?",
@@ -1026,7 +1026,7 @@ export const Questiondata = {
             options: ["Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete walls"]
         },
         "9": {
-            question: "What structure supports the Roof?",
+            question: "What is the Roof Structure?",
             description: "",
             img: {
                 "title": "",
@@ -1034,7 +1034,7 @@ export const Questiondata = {
     
             },
             route: "optionform",
-            subject: "Roof support",
+            subject: "Roof structure",
             current_route: "option_question",
             next_route: "option_question",
             row_input: "55",
@@ -1069,7 +1069,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "89",
             col_input: "5",
-            options: ["None", "Brick", "Block", "Lightweight"]
+            options: ["None ", "Brick ", "Block ", "Lightweight "]
         },
         "12": {
             question: "Do you have any Veneers, if so what is the material?",
@@ -1087,7 +1087,7 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What is the structure at Ground Floor Level?",
+            question: "What structure (eg columns/walls) supports the Ground Floor?",
             description: "",
             img: {
                 title: "",
@@ -1102,7 +1102,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
-            question: "What structure supports the Ground Floor?",
+            question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -1117,7 +1117,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "15": {
-            question: "What is the structure at First Floor Level?",
+            question: "What structure (eg columns/walls) supports the First Floor?",
             description: "",
             img: {
                 title: "",
@@ -1132,7 +1132,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
-            question: "What structure supports the First Floor?",
+            question: "What is the structure at Frist Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -1147,7 +1147,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "17": {
-            question: "What is the structure at the Second Floor Level?",
+            question: "What structure (eg columns/walls) supports the Second Floor?",
             description: "",
             img: {
                 title: "",
@@ -1162,7 +1162,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "18": {
-            question: "What structure supports the Second Floor Level?",
+            question: "What is the structure at Second Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -1204,7 +1204,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "21": {
             question: "What are the X-direction bracing walls made of at the First floor?",
@@ -1234,7 +1234,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "23": {
             question: "What are the X-direction bracing walls made of at the Second floor?",
@@ -1264,7 +1264,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "53",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "25": {
             question: "What is the cladding on the roof?",
@@ -1681,7 +1681,7 @@ export const Questiondata = {
             options: ["Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete walls"]
         },
         "9": {
-            question: "What structure supports the Roof?",
+            question: "What is the Roof Structure?",
             description: "",
             img: {
                 "title": "",
@@ -1689,7 +1689,7 @@ export const Questiondata = {
     
             },
             route: "optionform",
-            subject: "Roof support",
+            subject: "Roof structure",
             current_route: "option_question",
             next_route: "option_question",
             row_input: "55",
@@ -1724,7 +1724,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "89",
             col_input: "5",
-            options: ["None", "Brick", "Block", "Lightweight"]
+            options: ["None ", "Brick ", "Block ", "Lightweight "]
         },
         "12": {
             question: "Do you have any Veneers, if so what is the material?",
@@ -1742,7 +1742,7 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What is the structure at the Ground Floor Level?",
+            question: "What structure (eg columns/walls) supports the Ground Floor?",
             description: "",
             img: {
                 title: "",
@@ -1757,7 +1757,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
-            question: "What structure supports the Ground Floor Level?",
+            question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -1772,7 +1772,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "15": {
-            question: "What is the structure at the Basement Level?",
+            question: "What structure (eg columns/walls) supports the Basement Floor?",
             description: "",
             img: {
                 title: "",
@@ -1787,7 +1787,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
-            question: "What structure supports the Basement Floor?",
+            question: "What is the structure at Basement Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -1829,7 +1829,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "19": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
@@ -1859,7 +1859,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "56",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "21": {
             question: "What is the cladding on the roof?",
@@ -2201,7 +2201,7 @@ export const Questiondata = {
             options: ["Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete walls"]
         },
         "9": {
-            question: "What structure supports the Roof?",
+            question: "What is the Roof Structure?",
             description: "",
             img: {
                 "title": "",
@@ -2209,7 +2209,7 @@ export const Questiondata = {
     
             },
             route: "optionform",
-            subject: "Roof support",
+            subject: "Roof structure",
             current_route: "option_question",
             next_route: "option_question",
             row_input: "55",
@@ -2244,7 +2244,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "89",
             col_input: "5",
-            options: ["None", "Brick", "Block", "Lightweight"]
+            options: ["None ", "Brick ", "Block ", "Lightweight "]
         },
         "12": {
             question: "Do you have any Veneers, if so what is the material?",
@@ -2262,7 +2262,7 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What is the structure at Ground Floor Level?",
+            question: "What structure (eg columns/walls) supports the Ground Floor?",
             description: "",
             img: {
                 title: "",
@@ -2277,7 +2277,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
-            question: "What structure supports the Ground Floor?",
+            question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -2292,7 +2292,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slabs", "Concrete Block", "Other"]
         },
         "15": {
-            question: "What is the structure at the first Floor Level?",
+            question: "What structure (eg columns/walls) supports the First Floor?",
             description: "",
             img: {
                 title: "",
@@ -2307,7 +2307,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
-            question: "What structure supports the first Floor?",
+            question: "What is the structure at First Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -2322,7 +2322,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slabs", "Concrete Block", "Other"]
         },
         "17": {
-            question: "What is the structure at the Basement Level?",
+            question: "What structure (eg columns/walls) supports the Basement Floor?",
             description: "",
             img: {
                 title: "",
@@ -2337,7 +2337,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "18": {
-            question: "What structure supports the Basement Level?",
+            question: "What is the structure at Basement Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -2379,7 +2379,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "21": {
             question: "What are the X-direction bracing walls made of at the First floor?",
@@ -2409,7 +2409,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "23": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
@@ -2439,7 +2439,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "56",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "25": {
             question: "What is the cladding on the roof?",
@@ -2856,7 +2856,7 @@ export const Questiondata = {
             options: ["Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete walls"]
         },
         "9": {
-            question: "What structure supports the Roof?",
+            question: "What is the Roof Structure?",
             description: "",
             img: {
                 "title": "",
@@ -2864,7 +2864,7 @@ export const Questiondata = {
     
             },
             route: "optionform",
-            subject: "Roof support",
+            subject: "Roof structure",
             current_route: "option_question",
             next_route: "option_question",
             row_input: "55",
@@ -2899,7 +2899,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "89",
             col_input: "5",
-            options: ["None", "Brick", "Block", "Lightweight"]
+            options: ["None ", "Brick ", "Block ", "Lightweight "]
         },
         "12": {
             question: "Do you have any Veneers, if so what is the material?",
@@ -2917,7 +2917,7 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What is the structure at Ground Floor Level?",
+            question: "What structure (eg columns/walls) supports the Ground Floor?",
             description: "",
             img: {
                 title: "",
@@ -2932,7 +2932,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
-            question: "What structure supports the Ground Floor?",
+            question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -2947,7 +2947,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
         "15": {
-            question: "What is the structure at First Floor Level?",
+            question: "What structure (eg columns/walls) supports the First Floor?",
             description: "",
             img: {
                 title: "",
@@ -2962,7 +2962,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
-            question: "What structure supports the First Floor?",
+            question: "What is the structure at First Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -2977,7 +2977,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
         "17": {
-            question: "What is the structure at Second Floor Level?",
+            question: "What structure (eg columns/walls) supports the Second Floor?",
             description: "",
             img: {
                 title: "",
@@ -2992,7 +2992,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "18": {
-            question: "What structure supports the Second Floor Level?",
+            question: "What is the structure at Second Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -3007,7 +3007,7 @@ export const Questiondata = {
             options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
         "19": {
-            question: "What is the structure at the Basement Level?",
+            question: "What structure (eg columns/walls) supports the Basement Floor?",
             description: "",
             img: {
                 title: "",
@@ -3022,7 +3022,7 @@ export const Questiondata = {
             options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "20": {
-            question: "What structure supports the Basement Level?",
+            question: "What is the structure at Basement Floor Level?",
             description: "",
             img: {
                 title: "",
@@ -3064,7 +3064,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "23": {
             question: "What are the X-direction bracing walls made of at the First floor?",
@@ -3094,7 +3094,7 @@ export const Questiondata = {
             current_route: "option_question",
             row_input: "54",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "25": {
             question: "What are the X-direction bracing walls made of at the Second floor?",
@@ -3124,7 +3124,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "53",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "27": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
@@ -3154,7 +3154,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "56",
             col_input: "6",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "29": {
             question: "What is the cladding on the roof?",
