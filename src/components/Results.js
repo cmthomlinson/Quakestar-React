@@ -55,7 +55,7 @@ const Results = ({submited, floor_id, doc_id}) => {
 
         
     }
-
+ 
 
     return (
         <div class="text-center">
@@ -71,6 +71,11 @@ const Results = ({submited, floor_id, doc_id}) => {
                 if (Questiondata[floor_id][item+1]['current_route'] === 'text_question') {
                     return (
                         <h3 variant="primary">{item+1}:  x: {index['x']} y: {index['y']}</h3>
+                    )
+                }
+                if (Questiondata[floor_id][item+1]['current_route'] === 'check_question') {
+                    return (
+                        <h3 variant="primary">{item+1}:  Brick (URM): {index["Brick (URM)"]} Slab: {index["Slab"]} Timber piles: {index["Timber piles"]} Concrete piles: {index["Concrete piles"]} Engineered poles: {index["Engineered poles"]} Concrete walls: {index["Concrete walls"]}</h3>
                     )
                 }
            

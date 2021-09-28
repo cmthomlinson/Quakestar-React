@@ -14,6 +14,7 @@ import ImgStrength from "./ImgStrength";
 import ImgDamage from "./ImgDamage";
 import Resalert from './Resalert';
 import Info from './Info';
+import Checkform from './Checkform';
 
 
 const Question = () => {
@@ -180,6 +181,60 @@ const Question = () => {
             </div>
 
 
+        )
+
+    }
+    if (question.current_route === "check_question") {
+        return (
+            <div className="Question">
+                <Container>
+                    <div>
+                        <Row>
+                            <Col xs={8}>
+                                <Image src={require('../img/Quakestar_280px.png')}/>
+                                <div className="form">
+                                    <h2>Strength: { items.score }</h2>
+                                    <ImgStrength score={ items.score }/>
+                                    <h2>Damage: { items.damage }</h2>
+                                    <ImgDamage damage={ items.damage }/>
+                                    <br />
+                                    <br />
+                                    <h2>{que_id}: {question.question}</h2>
+                                    <p>{question.description}</p>
+                                    <Checkform que_id={que_id} set_res={setResponse} setShow={setShow} floor_id={floor_id}/>
+                                </div>
+                                
+                                <div className="next-button">
+                                    <Button onClick={nextQue} disabled={isLoading}>Next Question</Button> 
+                                </div>
+                                <div className="prev-button">
+                                    <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
+                                </div>
+                                <Picture floor_id={floor_id} que_id={que_id}/>
+                            
+                            </Col>
+                            <Col xs={1}>
+                            </Col>
+                            <Col>
+                            <div className="">
+                                <Info />
+                                <br/>
+                                <h2 className="">Navigation</h2>
+                                
+                                <Menu
+                                floor_id={floor_id} 
+                                que_id={que_id} 
+                                doc_id={doc_id}
+                                colour={colour}
+                                set_show={setShow}
+                                />
+                            </div>
+                            </Col>
+
+                        </Row>
+                    </div>
+                </Container>
+            </div>
         )
 
     }

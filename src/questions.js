@@ -107,14 +107,14 @@ export const Questiondata = {
         },
         "8": {
             question: "What type of foundations does your house have?",
-            description: "(Structure at and below the lowest level – ground level if no basement or basement level). Choose the one which best represents your situation",
+            description: "(Structure at and below the lowest level – ground level if no basement or basement level). You can choose more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
             route: "optionform",
             subject: "Foundations",
-            current_route: "option_question",
+            current_route: "check_question",
             next_route: "option_question",
             row_input: "58",
             col_input: "4",
@@ -492,14 +492,14 @@ export const Questiondata = {
         },
         "8": {
             question: "What type of foundations does your house have?",
-            description: "(Structure at and below the lowest level – ground level if no basement or basement level). Choose the one which best represents your situation",
+            description: "(Structure at and below the lowest level – ground level if no basement or basement level). You can choose more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
             route: "optionform",
             subject: "Foundations",
-            current_route: "option_question",
+            current_route: "check_question",
             next_route: "option_question",
             row_input: "58",
             col_input: "4",
@@ -1012,14 +1012,14 @@ export const Questiondata = {
         },
         "8": {
             question: "What type of foundations does your house have?",
-            description: "(Structure at and below the lowest level – ground level if no basement or basement level). Choose the one which best represents your situation",
+            description: "(Structure at and below the lowest level – ground level if no basement or basement level). You can choose more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
             route: "optionform",
             subject: "Foundations",
-            current_route: "option_question",
+            current_route: "check_question",
             next_route: "option_question",
             row_input: "58",
             col_input: "4",
@@ -1667,14 +1667,14 @@ export const Questiondata = {
         },
         "8": {
             question: "What type of foundations does your house have?",
-            description: "(Structure at and below the lowest level – ground level if no basement or basement level). Choose the one which best represents your situation",
+            description: "(Structure at and below the lowest level – ground level if no basement or basement level). You can choose more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
             route: "optionform",
             subject: "Foundations",
-            current_route: "option_question",
+            current_route: "check_question",
             next_route: "option_question",
             row_input: "58",
             col_input: "4",
@@ -2187,14 +2187,14 @@ export const Questiondata = {
         },
         "8": {
             question: "What type of foundations does your house have?",
-            description: "(Structure at and below the lowest level – ground level if no basement or basement level). Choose the one which best represents your situation",
+            description: "(Structure at and below the lowest level – ground level if no basement or basement level). You can choose more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
             route: "optionform",
             subject: "Foundations",
-            current_route: "option_question",
+            current_route: "check_question",
             next_route: "option_question",
             row_input: "58",
             col_input: "4",
@@ -2842,14 +2842,14 @@ export const Questiondata = {
         },
         "8": {
             question: "What type of foundations does your house have?",
-            description: "(Structure at and below the lowest level – ground level if no basement or basement level). Choose the one which best represents your situation",
+            description: "(Structure at and below the lowest level – ground level if no basement or basement level). You can choose more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
             },
             route: "optionform",
             subject: "Foundations",
-            current_route: "option_question",
+            current_route: "check_question",
             next_route: "option_question",
             row_input: "58",
             col_input: "4",
