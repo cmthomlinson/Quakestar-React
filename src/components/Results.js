@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 import { useState, useEffect } from "react";
-
+import { ListGroup } from 'react-bootstrap';
 
 import ImgStrength from "./ImgStrength";
 import ImgDamage from "./ImgDamage";
@@ -43,6 +43,7 @@ const Results = ({submited, floor_id, doc_id}) => {
             const item = JSON.parse(localStorage.getItem(i))
             res.push(item)
         }
+
         else {
             const item = localStorage.getItem(i)
             if (item == 0 || item == undefined) {
@@ -75,7 +76,7 @@ const Results = ({submited, floor_id, doc_id}) => {
                 }
                 if (Questiondata[floor_id][item+1]['current_route'] === 'check_question') {
                     return (
-                        <h3 variant="primary">{item+1}:  Brick (URM): {index["Brick (URM)"]} Slab: {index["Slab"]} Timber piles: {index["Timber piles"]} Concrete piles: {index["Concrete piles"]} Engineered poles: {index["Engineered poles"]} Concrete walls: {index["Concrete walls"]}</h3>
+                        <h3 variant="primary">{index}</h3>
                     )
                 }
            

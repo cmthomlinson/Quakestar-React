@@ -39,6 +39,10 @@ const Question = () => {
                 setIsLoading(false)
             },
             (error) => {
+                setItems({
+                    "score": "error",
+                    "damage": "damage"
+                })
                 setIsLoading(false)
     
             }
@@ -126,7 +130,7 @@ const Question = () => {
         
 
     }
-    if (question.current_route === "option_question" || question.current_route === "clad_question") {
+    if (question.current_route === "option_question") {
         return (
             <div className="Question">
                 <Container>

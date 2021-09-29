@@ -243,7 +243,7 @@ export const Questiondata = {
         },
         "17": {
             question: "What is the cladding on the roof?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -251,7 +251,7 @@ export const Questiondata = {
             options: ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane."],
             route: "cladform",
             subject: "Roof cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 "Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)": {
@@ -278,7 +278,7 @@ export const Questiondata = {
         },
         "18": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -286,7 +286,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "text_question",
             inputs: {
                 Concrete: {
@@ -688,7 +688,7 @@ export const Questiondata = {
         },
         "21": {
             question: "What is the cladding on the roof?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -696,7 +696,7 @@ export const Questiondata = {
             options: ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane."],
             route: "cladform",
             subject: "Roof cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 "Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)": {
@@ -723,7 +723,7 @@ export const Questiondata = {
         },
         "22": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -731,7 +731,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -758,7 +758,7 @@ export const Questiondata = {
         },
         "23": {
             question: "What cladding materials are used on the First Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -766,7 +766,7 @@ export const Questiondata = {
             options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
             route: "cladform",
             subject: "First floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "text_question",
             inputs: {
                 Concrete: {
@@ -1268,7 +1268,7 @@ export const Questiondata = {
         },
         "25": {
             question: "What is the cladding on the roof?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1276,7 +1276,7 @@ export const Questiondata = {
             options: ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane."],
             route: "cladform",
             subject: "Roof cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 "Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)": {
@@ -1303,7 +1303,7 @@ export const Questiondata = {
         },
         "26": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1311,7 +1311,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -1338,7 +1338,7 @@ export const Questiondata = {
         },
         "27": {
             question: "What cladding materials are used on the First Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1346,7 +1346,7 @@ export const Questiondata = {
             options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
             route: "cladform",
             subject: "First floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -1373,7 +1373,7 @@ export const Questiondata = {
         },
         "28": {
             question: "What cladding materials are used on the Second Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1381,7 +1381,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Second floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "text_question",
             inputs: {
                 Concrete: {
@@ -1863,7 +1863,7 @@ export const Questiondata = {
         },
         "21": {
             question: "What is the cladding on the roof?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1871,7 +1871,7 @@ export const Questiondata = {
             options: ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane."],
             route: "cladform",
             subject: "Roof cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 "Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)": {
@@ -1898,7 +1898,7 @@ export const Questiondata = {
         },
         "22": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1906,7 +1906,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -1933,7 +1933,7 @@ export const Questiondata = {
         },
         "23": {
             question: "What cladding materials are used on the Basement Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1941,7 +1941,7 @@ export const Questiondata = {
             options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
             route: "cladform",
             subject: "Ground floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "text_question",
             inputs: {
                 Concrete: {
@@ -2443,7 +2443,7 @@ export const Questiondata = {
         },
         "25": {
             question: "What is the cladding on the roof?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2451,7 +2451,7 @@ export const Questiondata = {
             options: ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane."],
             route: "cladform",
             subject: "Roof cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 "Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)": {
@@ -2478,7 +2478,7 @@ export const Questiondata = {
         },
         "26": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2486,7 +2486,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -2513,7 +2513,7 @@ export const Questiondata = {
         },
         "27": {
             question: "What cladding materials are used on the First Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2521,7 +2521,7 @@ export const Questiondata = {
             options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
             route: "cladform",
             subject: "First floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -2548,7 +2548,7 @@ export const Questiondata = {
         },
         "28": {
             question: "What cladding materials are used on the Basement Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2556,7 +2556,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Basement floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "text_question",
             inputs: {
                 Concrete: {
@@ -3158,7 +3158,7 @@ export const Questiondata = {
         },
         "29": {
             question: "What is the cladding on the roof?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3166,7 +3166,7 @@ export const Questiondata = {
             options: ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane."],
             route: "cladform",
             subject: "Roof cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 "Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)": {
@@ -3193,7 +3193,7 @@ export const Questiondata = {
         },
         "30": {
             question: "What cladding materials are used on the Ground Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3201,7 +3201,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Ground floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -3228,7 +3228,7 @@ export const Questiondata = {
         },
         "31": {
             question: "What cladding materials are used on the First Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3236,7 +3236,7 @@ export const Questiondata = {
             options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
             route: "cladform",
             subject: "First floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -3263,7 +3263,7 @@ export const Questiondata = {
         },
         "32": {
             question: "What cladding materials are used on the Second Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3271,7 +3271,7 @@ export const Questiondata = {
             options: ["Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar "],
             route: "cladform",
             subject: "Second floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "clad_question",
             inputs: {
                 Concrete: {
@@ -3298,7 +3298,7 @@ export const Questiondata = {
         },
         "33": {
             question: "What cladding materials are used on the Basement Floor?",
-            description: "",
+            description: "You can select more than one.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3306,7 +3306,7 @@ export const Questiondata = {
             options: ["Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"],
             route: "cladform",
             subject: "Basement floor cladding",
-            current_route: "clad_question",
+            current_route: "check_question",
             next_route: "text_question",
             inputs: {
                 Concrete: {

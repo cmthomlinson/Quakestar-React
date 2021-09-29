@@ -15,21 +15,21 @@ const Checkform = ({que_id, setShow, set_res}) => {
     const options = question.options
     const [value, setValue] = useState(JSON.parse(localStorage.getItem(que_id)));
     const updated_options = []
-
+    const updated_options1 = []
 
     for (let i = 0; i < options.length; i++) {
         updated_options.push({
             option: options[i]
         })
     }
-    
+
     console.log(value)
 
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-    
-    }, [])
+        setValue(JSON.parse(localStorage.getItem(que_id)))
+    }, [que_id])
 
     const checkboxes = [
         {
@@ -60,6 +60,7 @@ const Checkform = ({que_id, setShow, set_res}) => {
         const body = { post: {
             "response": value
         }}
+
 
         const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
