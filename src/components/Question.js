@@ -15,6 +15,7 @@ import ImgDamage from "./ImgDamage";
 import Resalert from './Resalert';
 import Info from './Info';
 import Checkform from './Checkform';
+import Support from './Support';
 
 
 const Question = () => {
@@ -24,6 +25,7 @@ const Question = () => {
     const [response, setResponse] = useState(localStorage.getItem(que_id));
     const [colour, setColour] = useState('primary');
     const [show, setShow] = useState(false);
+    const [showSupport, setShowsupport] = useState(false);
     const [alert, setAlert] = useState(false);
     const [items, setItems] = useState([]);
     const history = useHistory();
@@ -41,7 +43,7 @@ const Question = () => {
             (error) => {
                 setItems({
                     "score": "error",
-                    "damage": "damage"
+                    "damage": "error"
                 })
                 setIsLoading(false)
     
@@ -98,6 +100,7 @@ const Question = () => {
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
+                                    
                                 </div>
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                             </Col>
@@ -157,6 +160,7 @@ const Question = () => {
                                 <div className="prev-button">
                                     <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
                                 </div>
+      
                                 
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                       
@@ -358,18 +362,8 @@ const Question = () => {
                         <Row>   
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <div class="text-center" >
-                                    
-                                    <div class="form">
-                                        <h1>Results</h1>
-                                        <p>Congratulations you have finished the questionnaire</p>
-                                        <br />
-                                        <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id}/>
-                                        
-                                        
-                                    </div>
-                                </div>
-
+                                <h2>Your HouseCheck Results</h2>
+                                <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id} strength={items.score} damage={items.damage}/>
                             </Col>
                             <Col xs={1}>
                             </Col>

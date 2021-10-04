@@ -30,3 +30,11 @@
 
     float: right;
 }
+
+.results-qreen {
+    background-color: #E2EFE5;
+}
+
+.results-red {
+    background-color: #f0bbbb;
+}

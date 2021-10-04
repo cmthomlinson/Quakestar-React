@@ -63,10 +63,12 @@ const Record = () => {
     return (
         <div className="Home">
             <Container>
+                <p></p>
                 <Form onSubmit={handleSubmit}>
                     <Form.Label>HouseCheck id</Form.Label>
                     <Form.Control type="input" onChange={e => setDoc_id(e.target.value)}/>
                 </Form>
+                <br />
                 <Button
                     variant="primary"
                     type="submit"
