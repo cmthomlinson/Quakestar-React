@@ -194,7 +194,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
             question: "What is the structure at Ground Floor Level?",
@@ -579,7 +579,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
             question: "What is the structure at Ground Floor Level?",
@@ -609,7 +609,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
             question: "What is the structure at First Floor Level?",
@@ -1099,7 +1099,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
             question: "What is the structure at Ground Floor Level?",
@@ -1129,7 +1129,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
             question: "What is the structure at Frist Floor Level?",
@@ -1159,7 +1159,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "53",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "18": {
             question: "What is the structure at Second Floor Level?",
@@ -1754,7 +1754,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
             question: "What is the structure at Ground Floor Level?",
@@ -1784,7 +1784,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "56",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
             question: "What is the structure at Basement Floor Level?",
@@ -2274,7 +2274,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
             question: "What is the structure at Ground Floor Level?",
@@ -2304,7 +2304,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
             question: "What is the structure at First Floor Level?",
@@ -2334,7 +2334,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "18": {
             question: "What is the structure at Basement Floor Level?",
@@ -2929,7 +2929,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "14": {
             question: "What is the structure at Ground Floor Level?",
@@ -2959,7 +2959,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
             question: "What is the structure at First Floor Level?",
@@ -2989,7 +2989,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "53",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "18": {
             question: "What is the structure at Second Floor Level?",
@@ -3019,7 +3019,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "56",
             col_input: "4",
-            options: ["Timber", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "20": {
             question: "What is the structure at Basement Floor Level?",
