@@ -134,7 +134,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "10": {
             question: "Do you have any Chimneys, if so what is the material?",
@@ -209,7 +209,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss / beams", "Concrete beams / slab", "Other"]
         },
         "15": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
@@ -519,7 +519,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "10": {
             question: "Do you have any Chimneys, if so what is the material?",
@@ -594,7 +594,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "15": {
             question: "What structure (eg columns/walls) supports the First Floor Level?",
@@ -624,7 +624,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
         "17": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
@@ -1039,7 +1039,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "10": {
             question: "Do you have any Chimneys, if so what is the material?",
@@ -1114,7 +1114,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "15": {
             question: "What structure (eg columns/walls) supports the First Floor?",
@@ -1144,7 +1144,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "17": {
             question: "What structure (eg columns/walls) supports the Second Floor?",
@@ -1174,7 +1174,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "53",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "19": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
@@ -1694,7 +1694,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "10": {
             question: "Do you have any Chimneys, if so what is the material?",
@@ -1769,7 +1769,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "15": {
             question: "What structure (eg columns/walls) supports the Basement Floor?",
@@ -1799,7 +1799,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "56",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Earth", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Earth", "Other"]
         },
         "17": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
@@ -2214,7 +2214,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "10": {
             question: "Do you have any Chimneys, if so what is the material?",
@@ -2289,7 +2289,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slabs", "Concrete Block", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slabs", "Concrete Block", "Other"]
         },
         "15": {
             question: "What structure (eg columns/walls) supports the First Floor?",
@@ -2319,7 +2319,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slabs", "Concrete Block", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slabs", "Concrete Block", "Other"]
         },
         "17": {
             question: "What structure (eg columns/walls) supports the Basement Floor?",
@@ -2349,7 +2349,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Earth", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Earth", "Other"]
         },
         "19": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
@@ -2869,7 +2869,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "10": {
             question: "Do you have any Chimneys, if so what is the material?",
@@ -2944,7 +2944,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
         "15": {
             question: "What structure (eg columns/walls) supports the First Floor?",
@@ -2974,7 +2974,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
         "17": {
             question: "What structure (eg columns/walls) supports the Second Floor?",
@@ -3004,7 +3004,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "53",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
         "19": {
             question: "What structure (eg columns/walls) supports the Basement Floor?",
@@ -3034,7 +3034,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "56",
             col_input: "7",
-            options: ["Timber truss/beams", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Earth", "Other"]
+            options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Earth", "Other"]
         },
         "21": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
