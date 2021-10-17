@@ -168,7 +168,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
                             <p><b>Strength:</b></p>
                         </Col>
                         <Col xs={9}>
-                            <h5 className="d-inline">{ strength }    </h5><ImgStrength className="d-inline" score={ strength }/><p>Your house is <b>{rate_strength}</b> a new code-compliant building</p>
+                            <h5 className="d-inline">{ strength }    </h5><ImgStrength className="d-inline" score={ strength }/><p>Your house is <i>{rate_strength}</i> a new code-compliant building</p>
                         </Col>
                     </Row>
                 </ListGroup.Item>
@@ -178,7 +178,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
                             <p><b>Damage:</b></p>
                         </Col>
                         <Col xs={9}>
-                            <h5 className="d-inline">{ damage }    </h5><ImgDamage  className="d-inline" damage={ damage }/><p>Your house is <b>{rate_damage}</b> a new code-compliant building</p>
+                            <h5 className="d-inline">{ damage }    </h5><ImgDamage  className="d-inline" damage={ damage }/><p>Your house would have <i>{rate_damage}</i> a new code-compliant building</p>
                         </Col>
                     </Row>
                 </ListGroup.Item>

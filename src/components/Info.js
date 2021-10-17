@@ -6,7 +6,7 @@ import { Accordion, Button, Form } from 'react-bootstrap';
 
 const Info = () => {
     const { floor_id, que_id, doc_id } = useParams();
-    const [issue, setIssue] = useState();
+    const [issue, setIssue] = useState("");
     const [type, setType] = useState()
     const [submitted, setSubmitted] = useState(false)
     const [isLoading, setIsLoading] = useState(false);
@@ -14,9 +14,12 @@ const Info = () => {
     
     useEffect(() => {
         setSubmitted(false)
-        setIssue(false)
+        setIssue(" ")
     }, [que_id]);
 
+    useEffect(() => {
+        setIssue(" ")
+    }, [submitted]);
 
     const handleSubmit = e => {
         e.preventDefault();

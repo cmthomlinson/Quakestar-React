@@ -95,7 +95,7 @@ const Question = () => {
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
-                                    <p>{question.description}</p>
+                                    <h5>{question.description}</h5>
                                     <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
                                 </div>
                                 <div className="next-button">
@@ -150,7 +150,7 @@ const Question = () => {
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
-                                    <p>{question.description}</p>
+                                    <h5>{question.description}</h5>
                                     <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
                                 </div>
                                 <div className="next-button">
@@ -208,7 +208,7 @@ const Question = () => {
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
-                                    <p>{question.description}</p>
+                                    <h5>{question.description}</h5>
                                     <Checkform que_id={que_id} set_res={setResponse} setShow={setShow} floor_id={floor_id}/>
                                 </div>
                                 
@@ -262,7 +262,8 @@ const Question = () => {
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
-                                    <p>{question.description}</p>
+                                    <h5>{question.description}</h5>
+                                    <p>Look below for guidance on measuring area</p>
                                     <Textform que_id={que_id} set_res={setResponse} setShow={setShow} floor_id={floor_id}/>
                                 </div>
                                 
@@ -317,7 +318,8 @@ const Question = () => {
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
-                                    <p>{question.description}</p>
+                                    <h5>{question.description}</h5>
+                                    <p>Look below for guidance on measuring area</p>
                                     <Textform que_id={que_id}  set_res={setResponse} setShow={setShow} floor_id={floor_id}/>
                                 </div>
                                 <div className="next-button">

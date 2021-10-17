@@ -9,10 +9,11 @@ const Topalert = ({setShow, que_id, floor_id}) => {
 
     if (localStorage.getItem(que_id) != 0) {
         if (question.current_route === "text_question") {
-            const submitted_line = "X: " + JSON.parse(localStorage.getItem(que_id)).x +"m" + "  Y: " + JSON.parse(localStorage.getItem(que_id)).y +"m"
+            const area = JSON.parse(localStorage.getItem(que_id)).x*JSON.parse(localStorage.getItem(que_id)).y
+            const submitted_line = "X: " + JSON.parse(localStorage.getItem(que_id)).x +"m" + "  Y: " + JSON.parse(localStorage.getItem(que_id)).y +"m" + "  Area = " + area +"m"
             return (
                 <Alert variant="success">
-                <h5>Your saved response: <b>{ submitted_line }</b></h5>
+                <h5>Your saved response: <b>{ submitted_line }<sup>2</sup></b></h5>
               </Alert>
             )
         }

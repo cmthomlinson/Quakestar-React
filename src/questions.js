@@ -13,7 +13,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "17",
             col_input: "4",
-            options: ["Kaitaia", "Paihia/Russel", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basine Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthers Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
+            options: ["Kaitaia", "Paihia/Russell", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basin Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthur's Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
         },
         "2": {
             question: "How steep is your site",
@@ -88,7 +88,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "30",
             col_input: "5",
-            options: ["Engineer", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
+            options: ["Engineer or Architect", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
         },
         "7": {
             question: "How would you describe the overall construction?",
@@ -224,7 +224,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "16": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
@@ -239,7 +239,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "17": {
             question: "What is the cladding on the roof?",
@@ -398,7 +398,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "17",
             col_input: "4",
-            options: ["Kaitaia", "Paihia/Russel", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basine Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthers Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
+            options: ["Kaitaia", "Paihia/Russell", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basin Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthur's Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
         },
         "2": {
             question: "How steep is your site",
@@ -473,7 +473,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "30",
             col_input: "5",
-            options: ["Engineer", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
+            options: ["Engineer or Architect", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
         },
         "7": {
             question: "How would you describe the overall construction?",
@@ -639,7 +639,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "18": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
@@ -654,7 +654,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "19": {
             question: "What are the X-direction bracing walls made of at the First floor?",
@@ -669,7 +669,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard ", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "20": {
             question: "What are the Y-direction bracing walls made of at the First floor?",
@@ -684,7 +684,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "54",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "21": {
             question: "What is the cladding on the roof?",
@@ -918,7 +918,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "17",
             col_input: "4",
-            options: ["Kaitaia", "Paihia/Russel", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basine Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthers Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
+            options: ["Kaitaia", "Paihia/Russell", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basin Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthur's Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
         },
         "2": {
             question: "How steep is your site",
@@ -993,7 +993,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "30",
             col_input: "5",
-            options: ["Engineer", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
+            options: ["Engineer or Architect", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
         },
         "7": {
             question: "How would you describe the overall construction?",
@@ -1189,7 +1189,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "20": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
@@ -1204,7 +1204,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "21": {
             question: "What are the X-direction bracing walls made of at the First floor?",
@@ -1219,7 +1219,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "22": {
             question: "What are the Y-direction bracing walls made of at the First floor?",
@@ -1234,7 +1234,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "23": {
             question: "What are the X-direction bracing walls made of at the Second floor?",
@@ -1249,7 +1249,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "53",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "24": {
             question: "What are the Y-direction bracing walls made of at the Second floor?",
@@ -1264,7 +1264,7 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "53",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
         "25": {
             question: "What is the cladding on the roof?",
@@ -1573,7 +1573,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "17",
             col_input: "4",
-            options: ["Kaitaia", "Paihia/Russel", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basine Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthers Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
+            options: ["Kaitaia", "Paihia/Russell", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basin Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthur's Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
         },
         "2": {
             question: "How steep is your site",
@@ -1648,7 +1648,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "30",
             col_input: "5",
-            options: ["Engineer", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
+            options: ["Engineer or Architect", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
         },
         "7": {
             question: "How would you describe the overall construction?",
@@ -1772,21 +1772,6 @@ export const Questiondata = {
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
         "15": {
-            question: "What structure (eg columns/walls) supports the Basement Floor?",
-            description: "",
-            img: {
-                title: "",
-                img_name: "Quakestar_280px.png"
-            },
-            route: "optionform",
-            subject: "Basement floor structure",
-            current_route: "option_question",
-            next_route: "option_question",
-            row_input: "56",
-            col_input: "4",
-            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
-        },
-        "16": {
             question: "What is the structure at Basement Floor Level?",
             description: "",
             img: {
@@ -1801,7 +1786,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Earth", "Other"]
         },
-        "17": {
+        "16": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -1814,9 +1799,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "18": {
+        "17": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -1829,9 +1814,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "19": {
+        "18": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
             description: "",
             img: {
@@ -1844,9 +1829,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "56",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "20": {
+        "19": {
             question: "What are the Y-direction bracing walls made of at the Basement floor?",
             description: "",
             img: {
@@ -1859,9 +1844,9 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "56",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "21": {
+        "20": {
             question: "What is the cladding on the roof?",
             description: "You can select more than one.",
             img: {
@@ -1896,7 +1881,7 @@ export const Questiondata = {
                 }
             }
         },
-        "22": {
+        "21": {
             question: "What cladding materials are used on the Ground Floor?",
             description: "You can select more than one.",
             img: {
@@ -1931,7 +1916,7 @@ export const Questiondata = {
                 }
             }
         },
-        "23": {
+        "22": {
             question: "What cladding materials are used on the Basement Floor?",
             description: "You can select more than one.",
             img: {
@@ -1966,7 +1951,7 @@ export const Questiondata = {
                 }
             }
         },
-        "24": {
+        "23": {
             question: "What is the area of the Ground Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -1986,7 +1971,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "25": {
+        "24": {
             question: "What is the area of the Basement Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2006,7 +1991,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "26": {
+        "25": {
             question: "What is the area of the Roof in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2026,7 +2011,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "27": {
+        "26": {
             question: "What is the total length of all bracing walls at Ground level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -2046,7 +2031,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "28": {
+        "27": {
             question: "What is the total length of all bracing walls at the Basement level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -2066,7 +2051,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "29": {
+        "28": {
             question: "",
             description: "",
             img: {
@@ -2093,7 +2078,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "17",
             col_input: "4",
-            options: ["Kaitaia", "Paihia/Russel", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basine Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthers Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
+            options: ["Kaitaia", "Paihia/Russell", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basin Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthur's Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
         },
         "2": {
             question: "How steep is your site",
@@ -2168,7 +2153,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "30",
             col_input: "5",
-            options: ["Engineer", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
+            options: ["Engineer or Architect", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
         },
         "7": {
             question: "How would you describe the overall construction?",
@@ -2322,21 +2307,6 @@ export const Questiondata = {
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slabs", "Concrete Block", "Other"]
         },
         "17": {
-            question: "What structure (eg columns/walls) supports the Basement Floor?",
-            description: "",
-            img: {
-                title: "",
-                img_name: "Quakestar_280px.png"
-            },
-            route: "optionform",
-            subject: "Basement floor structure",
-            current_route: "option_question",
-            next_route: "option_question",
-            row_input: "55",
-            col_input: "4",
-            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
-        },
-        "18": {
             question: "What is the structure at Basement Floor Level?",
             description: "",
             img: {
@@ -2351,7 +2321,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Earth", "Other"]
         },
-        "19": {
+        "18": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -2364,9 +2334,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "20": {
+        "19": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -2379,9 +2349,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "21": {
+        "20": {
             question: "What are the X-direction bracing walls made of at the First floor?",
             description: "",
             img: {
@@ -2394,9 +2364,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "22": {
+        "21": {
             question: "What are the Y-direction bracing walls made of at the First floor?",
             description: "",
             img: {
@@ -2409,9 +2379,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "23": {
+        "22": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
             description: "",
             img: {
@@ -2424,9 +2394,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "56",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "24": {
+        "23": {
             question: "What are the Y-direction bracing walls made of at the Basement floor?",
             description: "",
             img: {
@@ -2439,9 +2409,9 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "56",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "25": {
+        "24": {
             question: "What is the cladding on the roof?",
             description: "You can select more than one.",
             img: {
@@ -2476,7 +2446,7 @@ export const Questiondata = {
                 }
             }
         },
-        "26": {
+        "25": {
             question: "What cladding materials are used on the Ground Floor?",
             description: "You can select more than one.",
             img: {
@@ -2511,7 +2481,7 @@ export const Questiondata = {
                 }
             }
         },
-        "27": {
+        "26": {
             question: "What cladding materials are used on the First Floor?",
             description: "You can select more than one.",
             img: {
@@ -2546,7 +2516,7 @@ export const Questiondata = {
                 }
             }
         },
-        "28": {
+        "29": {
             question: "What cladding materials are used on the Basement Floor?",
             description: "You can select more than one.",
             img: {
@@ -2581,7 +2551,7 @@ export const Questiondata = {
                 }
             }
         },
-        "29": {
+        "30": {
             question: "What is the area of the Ground Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2601,7 +2571,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "30": {
+        "31": {
             question: "What is the area of the First Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2621,7 +2591,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "31": {
+        "32": {
             question: "What is the area of the Basement Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2641,7 +2611,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "32": {
+        "33": {
             question: "What is the area of the Roof in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2661,7 +2631,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "33": {
+        "34": {
             question: "What is the total length of all bracing walls at Ground level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -2681,7 +2651,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "34": {
+        "35": {
             question: "What is the total length of all bracing walls at the First level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -2701,7 +2671,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "35": {
+        "36": {
             question: "What is the total length of all bracing walls at the Basement level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -2721,7 +2691,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "36": {
+        "37": {
             question: "",
             description: "",
             img: {
@@ -2748,7 +2718,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "17",
             col_input: "4",
-            options: ["Kaitaia", "Paihia/Russel", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basine Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthers Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
+            options: ["Kaitaia", "Paihia/Russell", "Kaikohe", "Whangarei", "Dargaville", "Warkworth", "Auckland", "Manukau City", "Waiuku", "Pukekohe", "Thames", "Paeroa", "Waihi", "Huntly", "Ngaruawahia", "Morrinsville", "Te Aroha", "Tauranga", "Mount Maunganui", "Hamilton", "Cambridge", "Te Awamutu", "Matamata", "Te Puke", "Putaruru", "Tokoroa", "Otorohanga", "Te Kuiti", "Mangakino", "Rotorua", "Kawerau", "Whakatane", "Opotiki", "Ruatoria", "Murupara", "Taupo", "Taumarunui", "Turangi", "Gisborne", "Wairoa", "New Plymouth", "Inglewood", "Stratford", "Opunake", "Hawera", "Patea", "Raetihi", "Ohakune", "Waiouru", "Napier", "Hastings", "Whanganui", "Waipawa", "Waipukurau", "Taihape", "Marton", "Bulls", "Feilding", "Palmerston North", "Dannevirke", "Woodville", "Pahiatua", "Foxton/Foxton Beach", "Levin", "Otaki", "Waikanae", "Paraparaumu", "Masterton", "Porirua", "Wellington CBD (North of Basin Reserve)", "Wellington", "Hutt Valley (South of Taita Gorge)", "Upper Hutt", "Eastbourne (Point Howard)", "Wainuiomata", "Takaka", "Motueka", "Nelson", "Picton", "Blenheim", "St Arnaud", "Westport", "Reefton", "Murchison", "Springs Junction", "Hanmer Springs", "Seddon", "Ward", "Cheviot", "Greymouth", "Kaikoura", "Harihari", "Hokitika", "Fox Glacier", "Franz Josef", "Otira", "Arthur's Pass", "Rangiora", "Darfield", "Akaroa", "Christchurch", "Geraldine", "Ashburton", "Fairlie", "Temuka", "Mt Cook", "Twizel", "Waimate", "Cromwell", "Wanaka", "Arrowtown", "Alexandra", "Queenstown", "Milford Sound", "Palmerston", "Oamaru", "Dunedin", "Mosgiel", "Riverton", "Te Anau", "Gore", "Winton", "Balclutha", "Mataura", "Bluff", "Invercargill", "Oban"]
         },
         "2": {
             question: "How steep is your site",
@@ -2823,7 +2793,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "30",
             col_input: "5",
-            options: ["Engineer", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
+            options: ["Engineer or Architect", "Group Housing", "LBP Builder", "Non-LBP builder", "Not known"]
         },
         "7": {
             question: "How would you describe the overall construction?",
@@ -3007,21 +2977,6 @@ export const Questiondata = {
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
         "19": {
-            question: "What structure (eg columns/walls) supports the Basement Floor?",
-            description: "",
-            img: {
-                title: "",
-                img_name: "Quakestar_280px.png"
-            },
-            route: "optionform",
-            subject: "Basement floor structure",
-            current_route: "option_question",
-            next_route: "option_question",
-            row_input: "56",
-            col_input: "4",
-            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
-        },
-        "20": {
             question: "What is the structure at Basement Floor Level?",
             description: "",
             img: {
@@ -3036,7 +2991,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Earth", "Other"]
         },
-        "21": {
+        "20": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -3049,9 +3004,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "22": {
+        "21": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -3064,9 +3019,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "55",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "23": {
+        "22": {
             question: "What are the X-direction bracing walls made of at the First floor?",
             description: "",
             img: {
@@ -3079,9 +3034,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "24": {
+        "23": {
             question: "What are the Y-direction bracing walls made of at the First floor?",
             description: "",
             img: {
@@ -3094,9 +3049,9 @@ export const Questiondata = {
             current_route: "option_question",
             row_input: "54",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "25": {
+        "24": {
             question: "What are the X-direction bracing walls made of at the Second floor?",
             description: "",
             img: {
@@ -3109,9 +3064,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "53",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "26": {
+        "25": {
             question: "What are the Y-direction bracing walls made of at the Second floor?",
             description: "",
             img: {
@@ -3124,9 +3079,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "53",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "27": {
+        "26": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
             description: "",
             img: {
@@ -3139,9 +3094,9 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "56",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "28": {
+        "27": {
             question: "What are the Y-direction bracing walls made of at the Basement floor?",
             description: "",
             img: {
@@ -3154,9 +3109,9 @@ export const Questiondata = {
             next_route: "clad_question",
             row_input: "56",
             col_input: "6",
-            options: ["Structural steel ", "Ply ", "Gib ", "Concrete Block ", "Concrete ", "Brick (URM) "]
+            options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "29": {
+        "28": {
             question: "What is the cladding on the roof?",
             description: "You can select more than one.",
             img: {
@@ -3191,7 +3146,7 @@ export const Questiondata = {
                 }
             }
         },
-        "30": {
+        "29": {
             question: "What cladding materials are used on the Ground Floor?",
             description: "You can select more than one.",
             img: {
@@ -3226,7 +3181,7 @@ export const Questiondata = {
                 }
             }
         },
-        "31": {
+        "30": {
             question: "What cladding materials are used on the First Floor?",
             description: "You can select more than one.",
             img: {
@@ -3261,7 +3216,7 @@ export const Questiondata = {
                 }
             }
         },
-        "32": {
+        "31": {
             question: "What cladding materials are used on the Second Floor?",
             description: "You can select more than one.",
             img: {
@@ -3296,7 +3251,7 @@ export const Questiondata = {
                 }
             }
         },
-        "33": {
+        "32": {
             question: "What cladding materials are used on the Basement Floor?",
             description: "You can select more than one.",
             img: {
@@ -3331,7 +3286,7 @@ export const Questiondata = {
                 }
             }
         },
-        "34": {
+        "33": {
             question: "What is the area of the Ground Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -3351,7 +3306,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "35": {
+        "34": {
             question: "What is the area of the First Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -3371,7 +3326,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "36": {
+        "35": {
             question: "What is the area of the Second Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -3391,7 +3346,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "37": {
+        "36": {
             question: "What is the area of the Basement Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -3411,7 +3366,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "38": {
+        "37": {
             question: "What is the area of the Roof in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -3431,7 +3386,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "39": {
+        "38": {
             question: "What is the total length of all bracing walls at Ground level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -3451,7 +3406,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "40": {
+        "39": {
             question: "What is the total length of all bracing walls at the First level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -3471,7 +3426,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "41": {
+        "40": {
             question: "What is the total length of all bracing walls at the Second level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -3491,7 +3446,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "42": {
+        "41": {
             question: "What is the total length of all bracing walls at the Basement level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -3511,7 +3466,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "43": {
+        "42": {
             question: "",
             description: "",
             img: {
