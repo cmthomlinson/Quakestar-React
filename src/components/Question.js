@@ -22,6 +22,8 @@ const Question = () => {
 
     const { floor_id, que_id, doc_id } = useParams();
     const [isLoading, setIsLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false)
+    const [emailisLoading, emailsetIsLoading] = useState(false);
     const [response, setResponse] = useState(localStorage.getItem(que_id));
     const [colour, setColour] = useState('primary');
     const [show, setShow] = useState(false);
@@ -29,6 +31,7 @@ const Question = () => {
     const [alert, setAlert] = useState(false);
     const [items, setItems] = useState([]);
     const history = useHistory();
+
 
     function getscoreanddamage(floor_id, doc_id) {
         
@@ -61,7 +64,7 @@ const Question = () => {
 
         };
 
-        
+        emailsetIsLoading(true)
         const url = "https://quakestar.herokuapp.com/send_email"
 
         fetch(url, {
@@ -74,11 +77,13 @@ const Question = () => {
         .then(response => response.json())
         .then(data => {
             setAlert(true)
+            setSubmitted(true)
+            emailsetIsLoading(false)
             console.log('Success:', data)
             
         })
         .catch((error) => {
-            
+            emailsetIsLoading(false)
             console.error('Error:', error);
         });
         
@@ -121,7 +126,7 @@ const Question = () => {
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
+                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -178,7 +183,7 @@ const Question = () => {
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
+                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -237,7 +242,7 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
+                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -292,7 +297,7 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
+                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -349,7 +354,7 @@ const Question = () => {
                             
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
+                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -404,8 +409,8 @@ const Question = () => {
                         <Row>   
                             <Col xs={8}>
                                 <Resalert alert={alert} setAlert={setAlert}/>
+                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save your results<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
                                 <h2>Your HouseCheck Results</h2>
                                 <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id} strength={items.score} damage={items.damage}/>
                             </Col>

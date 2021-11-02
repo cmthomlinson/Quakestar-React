@@ -8,7 +8,7 @@ const Resalert = ({alert, setAlert}) => {
     if (alert) {
         return (
             <Alert variant="info" onClose={() => setAlert(false)} dismissible>
-            <Alert.Heading>An email was sent to <b>{email['email']}</b> with a link for your results</Alert.Heading>
+            <Alert.Heading>An email was sent to <b>{email['email']}</b> with a link for your current results</Alert.Heading>
           </Alert>
         )
 
