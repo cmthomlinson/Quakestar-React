@@ -53,16 +53,16 @@ const Question = () => {
 
     function send_email() {
 
-        const results_url = "http://localhost:3000/question/" + floor_id + "/" + Object.keys(Questiondata[floor_id]).length + doc_id
+        const results_url = "http://localhost:3000/question/" + floor_id + "/" + Object.keys(Questiondata[floor_id]).length + "/" + doc_id
 
         const body = {
-            "user": localStorage.getItem('user'),
+            "user": JSON.parse(localStorage.getItem('user')),
             results_url: results_url
 
         };
 
         
-        const url = "https://quakestar.herokuapp.com/send_email/"
+        const url = "https://quakestar.herokuapp.com/send_email"
 
         fetch(url, {
         method: 'POST',
