@@ -38,3 +38,9 @@
 .results-red {
     background-color: #f0bbbb;
 }
+
+.email {
+    padding-top: 3rem;
+    float: right;
+}
+

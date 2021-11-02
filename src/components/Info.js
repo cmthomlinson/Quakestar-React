@@ -122,6 +122,7 @@ const Info = () => {
             <div>
                 <small class="version text-muted">HouseCheck version 2.0</small>
             </div>
+
             
         </div>
 

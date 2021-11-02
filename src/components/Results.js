@@ -10,16 +10,17 @@ import ImgDamage from "./ImgDamage";
 import { Questiondata } from "../questions";
 import { Lookup } from '../lookup';
 
-const checkResults = (floor_id) => {
+const checkResults = (floor_id, items) => {
     
     let uncompleted = 0
-    for (let i = 0; i < Object.keys(Questiondata[floor_id]).length; i++) {
-        if (localStorage.getItem(i) == 0) {
+    for (let i = 1; i < Object.keys(Questiondata[floor_id]).length; i++) {
+        const completed_i = "completed_" + i
+        if (items[completed_i] == false) {
             uncompleted++
         }
     }
     if (uncompleted >= 1) {
-        return uncompleted + " uncompleted questions"
+        return uncompleted + " uncompleted questions - still in progress. Use naviagation bar to complete remaining questions"
     }
     else {
         return "Completed - congratulations"
@@ -34,6 +35,8 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
     const [items, setItems] = useState([]);
     
 
+
+
     function getDetails(floor_id, doc_id) {
         
         const url = "https://quakestar.herokuapp.com/results/" + floor_id + "/" + doc_id
@@ -42,8 +45,10 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
           .then(
             (result) => {
                 setItems(result)
+           
                 setIsLoading(false);
                 setdetailsLoaded(true);
+                
             },
             (error) => {
                 setIsLoading(false);
@@ -53,8 +58,10 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
     }
 
 
+
     useEffect(() => {
         getDetails(floor_id, doc_id)
+
     }, [])
 
     const strength_lookup = (strength) => {
@@ -62,7 +69,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
             return "Very much higher strength than"
         }
         else {
-            return Lookup['strength'][strength]
+            return Lookup['strength'][parseInt(strength)]
         }
     }
 
@@ -71,34 +78,54 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
             return "Very much more damage than"
         }
         else {
-            return Lookup['damage'][strength]
+            return Lookup['damage'][parseInt(damage)]
         }
     }
 
     const rate_strength = strength_lookup(strength)
     const rate_damage = damage_lookup(damage)
 
-    const completed = checkResults(floor_id)
+    const completed = checkResults(floor_id, items)
     var res = [];
-    for (let i = 1; i < Object.keys(Questiondata[floor_id]).length; i++) {
-        if (Questiondata[floor_id][i]['current_route'] === 'text_question') {
-            const item = JSON.parse(localStorage.getItem(i))
-            const text = "x: " + item['x'] + "  y: " + item['y']
-        
-            res.push(text)
+    console.log(items)
+
+    for (let i = 1; i < Object.keys(Questiondata[floor_id]).length -1; i++) {
+        const completed_i = "completed_" + i
+        console.log(i)
+        if (items[completed_i] === true && Questiondata[floor_id][i]['current_route'] === 'text_question') {
+            const string = "X: " + items[i].x + "m" + "  Y: " + items[i].y + "m"
+            res.push(string)
+            localStorage.setItem(i, items[i])
         }
-        else {
-            const item = localStorage.getItem(i)
-            if (item == 0 || item == undefined) {
-                res.push('Unsubmitted')
+        if (items[completed_i] === true && Questiondata[floor_id][i]['current_route'] === 'option_question') {
+            res.push(items[i])
+            localStorage.setItem(i, items[i])
+        }
+        if (items[completed_i] === true && Questiondata[floor_id][i]['current_route'] === "check_question") {
+            
+            const options = ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane.", "Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete walls", "Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar ", "Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"]
+            const get_true = () => {
+                const list = []
+                for (let x in options) {
+                    if (items[i][options[x]] == true) {
+                        list.push(options[x] + "  ")
+                    }
+                }
+                return list
             }
-            else {
-                res.push(item)
-            }
+            localStorage.setItem(i, items[i])
+            res.push(get_true())
+        }
+        if (items[completed_i] === false) {
+            res.push("Unsubmitted")
+            localStorage.setItem(i, 0)
         }
 
         
     }
+
+    console.log(res)
+
 
     const floor_index = {
         "1": "1 floor",
@@ -110,7 +137,8 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
     }
 
     const result_table_colour = (que_id) => {
-        if (localStorage.getItem(que_id) == 0) {
+        const completed_i = "completed_" + que_id
+        if (items[completed_i] == false) {
             return "results-red"
         }
         else {
@@ -157,8 +185,8 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
                         <Col xs={2} className="bg-light">
                             <p><b>Status:</b></p>
                         </Col>
-                        <Col xs={4}>
-                            <p><b>{completed}</b></p>
+                        <Col xs={8}>
+                            <mark>{completed}</mark>
                         </Col>
                     </Row>
                 </ListGroup.Item>
@@ -200,48 +228,6 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
                     <b>Your responses</b>
                 </ListGroup.Item>
                 {res.map((index, item)=>{
-                    if (Questiondata[floor_id][item+1]['current_route'] === 'text_question') {
-    
-                        return (
-                            <ListGroup.Item>
-                                <Row>
-                                    <Col xs={2} className={result_table_colour(item+1)}>
-                                        {item+1}
-                                    </Col>
-                                    <Col xs={8}>
-                                        {Questiondata[floor_id][parseInt(item+1)]['question']} 
-                                        < br/>
-                                        < br/>
-                                        <mark>{index}</mark>
-                                        < br/>
-                                        < br/>
-                                    </Col>
-                                </Row>
-                            </ListGroup.Item>
-                        )
-                    }
-                    if (Questiondata[floor_id][item+1]['current_route'] === 'check_question') {
-                   
-                        return (
-                            <ListGroup.Item>
-                                <Row>
-                                    <Col xs={2} className={result_table_colour(item+1)}>
-                                        
-                                        {item+1}
-                                    </Col>
-                                    <Col xs={8}>
-                                        {Questiondata[floor_id][parseInt(item+1)]['question']} 
-                                        < br/>
-                                        < br/>
-                                        <mark>{index}</mark>
-                                        < br/>
-                                        < br/>
-                                    </Col>
-                                </Row>
-                            </ListGroup.Item>
-                        )
-                    }
-            
                     return (
                         <ListGroup.Item>
                             <Row>
@@ -249,7 +235,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
                                     {item+1}
                                 </Col>
                                 <Col xs={8}>
-                                    {Questiondata[floor_id][parseInt(item+1)]['question']} 
+                                    {Questiondata[floor_id][item+1]['question']} 
                                     < br/>
                                     < br/>
                                     <mark>{index}</mark>

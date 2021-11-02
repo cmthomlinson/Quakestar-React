@@ -3,11 +3,12 @@ import { Alert } from 'react-bootstrap';
 
 
 const Resalert = ({alert, setAlert}) => {
-
+    const user = localStorage.getItem('user')
+    const email = JSON.parse(user)
     if (alert) {
         return (
-            <Alert variant="danger" onClose={() => setAlert(false)} dismissible>
-            <Alert.Heading>You need to submit a response</Alert.Heading>
+            <Alert variant="info" onClose={() => setAlert(false)} dismissible>
+            <Alert.Heading>An email was sent to <b>{email['email']}</b> with a link to continue</Alert.Heading>
           </Alert>
         )
 

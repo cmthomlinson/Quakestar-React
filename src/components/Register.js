@@ -65,7 +65,7 @@ const Register = () => {
                     </Form.Group>
 
                     <Form.Group size="lg" controlId="email" required>
-                        <Form.Label>Email</Form.Label>
+                        <Form.Label>Email - Required for saving responses</Form.Label>
                         <Form.Control
                             autoFocus
                             type="email"

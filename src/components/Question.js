@@ -51,6 +51,40 @@ const Question = () => {
         )
     }
 
+    function send_email() {
+
+        const results_url = "http://localhost:3000/question/" + floor_id + "/" + Object.keys(Questiondata[floor_id]).length + doc_id
+
+        const body = {
+            "user": localStorage.getItem('user'),
+            results_url: results_url
+
+        };
+
+        
+        const url = "https://quakestar.herokuapp.com/send_email/"
+
+        fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+        })
+        .then(response => response.json())
+        .then(data => {
+            setAlert(true)
+            console.log('Success:', data)
+            
+        })
+        .catch((error) => {
+            
+            console.error('Error:', error);
+        });
+        
+        
+    }
+
     useEffect(() => {
         getscoreanddamage(floor_id, doc_id)
     }, [response]);
@@ -87,6 +121,7 @@ const Question = () => {
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
+                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -102,6 +137,7 @@ const Question = () => {
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
                                     
                                 </div>
+                                
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                             </Col>
                             <Col xs={1}>
@@ -142,6 +178,7 @@ const Question = () => {
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
+                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -152,6 +189,7 @@ const Question = () => {
                                     <h2>{que_id}: {question.question}</h2>
                                     <h5>{question.description}</h5>
                                     <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
+                                    
                                 </div>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
@@ -160,8 +198,7 @@ const Question = () => {
                                 <div className="prev-button">
                                     <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
                                 </div>
-      
-                                
+       
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                       
                             </Col>
@@ -200,6 +237,7 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
+                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -254,6 +292,7 @@ const Question = () => {
                         <Row>
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
+                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -310,6 +349,7 @@ const Question = () => {
                             
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
+                                <p className="email">Save and continue working in another time.<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -364,6 +404,7 @@ const Question = () => {
                         <Row>   
                             <Col xs={8}>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
+                                <p className="email">Save your results<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
                                 <h2>Your HouseCheck Results</h2>
                                 <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id} strength={items.score} damage={items.damage}/>
                             </Col>
