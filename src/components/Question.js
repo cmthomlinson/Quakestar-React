@@ -53,7 +53,7 @@ const Question = () => {
 
     function send_email() {
 
-        const results_url = "http://localhost:3000/question/" + floor_id + "/" + Object.keys(Questiondata[floor_id]).length + "/" + doc_id
+        const results_url = "https://main.d3jmjz4gq263kh.amplifyapp.com/question/" + floor_id + "/" + Object.keys(Questiondata[floor_id]).length + "/" + doc_id
 
         const body = {
             "user": JSON.parse(localStorage.getItem('user')),
@@ -403,6 +403,7 @@ const Question = () => {
                     <div>
                         <Row>   
                             <Col xs={8}>
+                                <Resalert alert={alert} setAlert={setAlert}/>
                                 <Image src={require('../img/Quakestar_280px.png')}/>
                                 <p className="email">Save your results<Button variant="link" onClick={() => send_email()} role="button">Email me</Button></p>
                                 <h2>Your HouseCheck Results</h2>
