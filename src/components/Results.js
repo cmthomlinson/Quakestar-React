@@ -89,7 +89,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
     var res = [];
     console.log(items)
 
-    for (let i = 1; i < Object.keys(Questiondata[floor_id]).length -1; i++) {
+    for (let i = 1; i < Object.keys(Questiondata[floor_id]).length ; i++) {
         const completed_i = "completed_" + i
         console.log(i)
         if (items[completed_i] === true && Questiondata[floor_id][i]['current_route'] === 'text_question') {
