@@ -95,7 +95,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
         if (items[completed_i] === true && Questiondata[floor_id][i]['current_route'] === 'text_question') {
             const string = "X: " + items[i].x + "m" + "  Y: " + items[i].y + "m"
             res.push(string)
-            localStorage.setItem(i, items[i])
+            localStorage.setItem(i, JSON.stringify(items[i]))
         }
         if (items[completed_i] === true && Questiondata[floor_id][i]['current_route'] === 'option_question') {
             res.push(items[i])
@@ -113,7 +113,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
                 }
                 return list
             }
-            localStorage.setItem(i, items[i])
+            localStorage.setItem(i, JSON.stringify(items[i]))
             res.push(get_true())
         }
         if (items[completed_i] === false) {
