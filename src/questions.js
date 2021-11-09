@@ -182,21 +182,6 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What structure (eg columns/walls) supports the Ground Floor?",
-            description: "",
-            img: {
-                title: "",
-                img_name: "Quakestar_280px.png"
-            },
-            route: "optionform",
-            subject: "Ground floor structure",
-            current_route: "option_question",
-            next_route: "option_question",
-            row_input: "55",
-            col_input: "4",
-            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
-        },
-        "14": {
             question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
@@ -211,7 +196,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss / beams", "Concrete beams / slab", "Other"]
         },
-        "15": {
+        "14": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -226,7 +211,7 @@ export const Questiondata = {
             col_input: "5",
             options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "16": {
+        "15": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -241,7 +226,7 @@ export const Questiondata = {
             col_input: "6",
             options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "17": {
+        "16": {
             question: "What is the cladding on the roof?",
             description: "You can select more than one.",
             img: {
@@ -276,7 +261,7 @@ export const Questiondata = {
                 }
             }
         },
-        "18": {
+        "17": {
             question: "What cladding materials are used on the Ground Floor?",
             description: "You can select more than one.",
             img: {
@@ -311,7 +296,7 @@ export const Questiondata = {
                 }
             }
         },
-        "19": {
+        "18": {
             question: "What is the area of the Ground Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -331,7 +316,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "20": {
+        "19": {
             question: "What is the area of the Roof in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -351,7 +336,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "21": {
+        "20": {
             question: "What is the total length of all bracing walls at Ground level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -370,6 +355,20 @@ export const Questiondata = {
                 row_input: "74",
                 col_input: "6"
             }
+        },
+        "21": {
+            question: "What is the irregularities of your house",
+            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "option_question",
+            subject: "Irregularities",
+            current_route: "option_question",
+            next_route: "results",
+            options: ["Regular", "Moderate", "Severe"]
+
         },
         "22": {
             question: "",
@@ -567,21 +566,6 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What structure (eg columns/walls) supports the Ground Floor?",
-            description: "",
-            img: {
-                title: "",
-                img_name: "Quakestar_280px.png"
-            },
-            route: "optionform",
-            subject: "Ground floor structure",
-            current_route: "option_question",
-            next_route: "option_question",
-            row_input: "55",
-            col_input: "4",
-            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
-        },
-        "14": {
             question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
@@ -596,7 +580,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
-        "15": {
+        "14": {
             question: "What structure (eg columns/walls) supports the First Floor Level?",
             description: "",
             img: {
@@ -611,7 +595,7 @@ export const Questiondata = {
             col_input: "4",
             options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "16": {
+        "15": {
             question: "What is the structure at First Floor Level?",
             description: "",
             img: {
@@ -626,7 +610,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Concrete Block", "Other"]
         },
-        "17": {
+        "16": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -641,7 +625,7 @@ export const Questiondata = {
             col_input: "5",
             options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "18": {
+        "17": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -656,7 +640,7 @@ export const Questiondata = {
             col_input: "6",
             options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "19": {
+        "18": {
             question: "What are the X-direction bracing walls made of at the First floor?",
             description: "",
             img: {
@@ -671,7 +655,7 @@ export const Questiondata = {
             col_input: "5",
             options: ["Structural steel", "Ply", "Gib / Plasterboard ", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "20": {
+        "19": {
             question: "What are the Y-direction bracing walls made of at the First floor?",
             description: "",
             img: {
@@ -686,7 +670,7 @@ export const Questiondata = {
             col_input: "6",
             options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "21": {
+        "20": {
             question: "What is the cladding on the roof?",
             description: "You can select more than one.",
             img: {
@@ -721,7 +705,7 @@ export const Questiondata = {
                 }
             }
         },
-        "22": {
+        "21": {
             question: "What cladding materials are used on the Ground Floor?",
             description: "You can select more than one.",
             img: {
@@ -756,7 +740,7 @@ export const Questiondata = {
                 }
             }
         },
-        "23": {
+        "22": {
             question: "What cladding materials are used on the First Floor?",
             description: "You can select more than one.",
             img: {
@@ -791,7 +775,7 @@ export const Questiondata = {
                 }
             }
         },
-        "24": {
+        "23": {
             question: "What is the area of the Ground Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -811,7 +795,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "25": {
+        "24": {
             question: "What is the area of the First Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -831,7 +815,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "26": {
+        "25": {
             question: "What is the area of the Roof in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -851,7 +835,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "27": {
+        "26": {
             question: "What is the total length of all bracing walls at Ground level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -871,7 +855,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "28": {
+        "27": {
             question: "What is the total length of all bracing walls at the First level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -890,6 +874,20 @@ export const Questiondata = {
                 row_input: "73",
                 col_input: "6"
             }
+        },
+        "28": {
+            question: "What is the irregularities of your house",
+            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "option_question",
+            subject: "Irregularities",
+            current_route: "option_question",
+            next_route: "results",
+            options: ["Regular", "Moderate", "Severe"]
+
         },
         "29": {
             question: "",
@@ -1087,21 +1085,6 @@ export const Questiondata = {
             options: ["None", "Brick", "Block", "Lightweight"]
         },
         "13": {
-            question: "What structure (eg columns/walls) supports the Ground Floor?",
-            description: "",
-            img: {
-                title: "",
-                img_name: "Quakestar_280px.png"
-            },
-            route: "optionform",
-            subject: "Ground floor structure",
-            current_route: "option_question",
-            next_route: "option_question",
-            row_input: "55",
-            col_input: "4",
-            options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
-        },
-        "14": {
             question: "What is the structure at Ground Floor Level?",
             description: "",
             img: {
@@ -1116,7 +1099,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
-        "15": {
+        "14": {
             question: "What structure (eg columns/walls) supports the First Floor?",
             description: "",
             img: {
@@ -1131,7 +1114,7 @@ export const Questiondata = {
             col_input: "4",
             options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "16": {
+        "15": {
             question: "What is the structure at Frist Floor Level?",
             description: "",
             img: {
@@ -1146,7 +1129,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
-        "17": {
+        "16": {
             question: "What structure (eg columns/walls) supports the Second Floor?",
             description: "",
             img: {
@@ -1161,7 +1144,7 @@ export const Questiondata = {
             col_input: "4",
             options: ["Timber framing", "Lightweight steel", "Structural steel", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "18": {
+        "17": {
             question: "What is the structure at Second Floor Level?",
             description: "",
             img: {
@@ -1176,7 +1159,7 @@ export const Questiondata = {
             col_input: "7",
             options: ["Timber trusses / joists", "Steel truss/beams", "Concrete beams / slab", "Other"]
         },
-        "19": {
+        "18": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -1191,7 +1174,7 @@ export const Questiondata = {
             col_input: "5",
             options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "20": {
+        "19": {
             question: "What are the Y-direction bracing walls made of at the Ground floor?",
             description: "",
             img: {
@@ -1206,7 +1189,7 @@ export const Questiondata = {
             col_input: "6",
             options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "21": {
+        "20": {
             question: "What are the X-direction bracing walls made of at the First floor?",
             description: "",
             img: {
@@ -1221,7 +1204,7 @@ export const Questiondata = {
             col_input: "5",
             options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "22": {
+        "21": {
             question: "What are the Y-direction bracing walls made of at the First floor?",
             description: "",
             img: {
@@ -1236,7 +1219,7 @@ export const Questiondata = {
             col_input: "6",
             options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "23": {
+        "22": {
             question: "What are the X-direction bracing walls made of at the Second floor?",
             description: "",
             img: {
@@ -1251,7 +1234,7 @@ export const Questiondata = {
             col_input: "5",
             options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
-        "24": {
+        "23": {
             question: "What are the Y-direction bracing walls made of at the Second floor?",
             description: "",
             img: {
@@ -1266,7 +1249,7 @@ export const Questiondata = {
             col_input: "6",
             options: ["Structural steel ", "Ply ", "Gib / Plasterboard ", "Concrete Block ", "Concrete ", "Brick (URM) "]
         },
-        "25": {
+        "24": {
             question: "What is the cladding on the roof?",
             description: "You can select more than one.",
             img: {
@@ -1301,7 +1284,7 @@ export const Questiondata = {
                 }
             }
         },
-        "26": {
+        "25": {
             question: "What cladding materials are used on the Ground Floor?",
             description: "You can select more than one.",
             img: {
@@ -1336,7 +1319,7 @@ export const Questiondata = {
                 }
             }
         },
-        "27": {
+        "26": {
             question: "What cladding materials are used on the First Floor?",
             description: "You can select more than one.",
             img: {
@@ -1371,7 +1354,7 @@ export const Questiondata = {
                 }
             }
         },
-        "28": {
+        "27": {
             question: "What cladding materials are used on the Second Floor?",
             description: "You can select more than one.",
             img: {
@@ -1406,7 +1389,7 @@ export const Questiondata = {
                 }
             }
         },
-        "29": {
+        "28": {
             question: "What is the area of the Ground Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -1426,7 +1409,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "30": {
+        "29": {
             question: "What is the area of the First Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -1446,7 +1429,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "31": {
+        "30": {
             question: "What is the area of the Second Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -1466,7 +1449,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "32": {
+        "31": {
             question: "What is the area of the Roof in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -1486,7 +1469,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "33": {
+        "32": {
             question: "What is the total length of all bracing walls at Ground level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -1506,7 +1489,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "34": {
+        "33": {
             question: "What is the total length of all bracing walls at the First level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -1526,7 +1509,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "35": {
+        "34": {
             question: "What is the total length of all bracing walls at the Second level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -1545,6 +1528,20 @@ export const Questiondata = {
                 row_input: "72",
                 col_input: "6"
             }
+        },
+        "35": {
+            question: "What is the irregularities of your house",
+            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "option_question",
+            subject: "Irregularities",
+            current_route: "option_question",
+            next_route: "results",
+            options: ["Regular", "Moderate", "Severe"]
+
         },
         "36": {
             question: "",
@@ -2052,6 +2049,20 @@ export const Questiondata = {
             }
         },
         "28": {
+            question: "What is the irregularities of your house",
+            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "option_question",
+            subject: "Irregularities",
+            current_route: "option_question",
+            next_route: "results",
+            options: ["Regular", "Moderate", "Severe"]
+
+        },
+        "29": {
             question: "",
             description: "",
             img: {
@@ -2516,7 +2527,7 @@ export const Questiondata = {
                 }
             }
         },
-        "29": {
+        "27": {
             question: "What cladding materials are used on the Basement Floor?",
             description: "You can select more than one.",
             img: {
@@ -2551,7 +2562,7 @@ export const Questiondata = {
                 }
             }
         },
-        "30": {
+        "28": {
             question: "What is the area of the Ground Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2571,7 +2582,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "31": {
+        "29": {
             question: "What is the area of the First Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2591,7 +2602,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "32": {
+        "30": {
             question: "What is the area of the Basement Floor in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2611,7 +2622,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "33": {
+        "31": {
             question: "What is the area of the Roof in square metres?",
             description: "Enter two dimensions to define the approximate area of each floor.  For example entering 10 in X and 12 in Y will mean 120 sq m of floor area.  It does not matter what the actual shape of the floor is – as long as the total areas match.",
             img: {
@@ -2631,7 +2642,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "34": {
+        "32": {
             question: "What is the total length of all bracing walls at Ground level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -2651,7 +2662,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "35": {
+        "33": {
             question: "What is the total length of all bracing walls at the First level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -2671,7 +2682,7 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "36": {
+        "34": {
             question: "What is the total length of all bracing walls at the Basement level in metres?",
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
@@ -2691,7 +2702,21 @@ export const Questiondata = {
                 col_input: "6"
             }
         },
-        "37": {
+        "35": {
+            question: "What is the irregularities of your house",
+            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "option_question",
+            subject: "Irregularities",
+            current_route: "option_question",
+            next_route: "results",
+            options: ["Regular", "Moderate", "Severe"]
+
+        },
+        "36": {
             question: "",
             description: "",
             img: {
@@ -3467,6 +3492,20 @@ export const Questiondata = {
             }
         },
         "42": {
+            question: "What is the irregularities of your house",
+            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            img: {
+                title: "",
+                img_name: ""
+            },
+            route: "option_question",
+            subject: "Irregularities",
+            current_route: "option_question",
+            next_route: "results",
+            options: ["Regular", "Moderate", "Severe"]
+
+        },
+        "43": {
             question: "",
             description: "",
             img: {

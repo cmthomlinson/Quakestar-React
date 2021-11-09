@@ -116,7 +116,7 @@ const Checkform = ({que_id, setShow, set_res}) => {
                 </Button>
                 <br />
                 <br />
-                
+                <Topalert setShow={setShow} que_id={que_id} floor_id={floor_id}/>
             </Form>
      
 

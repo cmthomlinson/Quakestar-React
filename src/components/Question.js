@@ -174,6 +174,65 @@ const Question = () => {
         
 
     }
+    if (question.current_route === "option_question" && parseInt(que_id) === Object.keys(Questiondata[floor_id]).length-1) {
+        return (
+            <div className="Question">
+                <Container>
+                    <div>
+                        <Row>
+                            <Resalert alert={alert} setAlert={setAlert}/>
+                            <Col xs={8}>
+                                <Image src={require('../img/Quakestar_280px.png')}/>
+                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
+                                <div className="form">
+                                    <h2>Strength: { items.score }</h2>
+                                    <ImgStrength score={ items.score }/>
+                                    <h2>Damage: { items.damage }</h2>
+                                    <ImgDamage damage={ items.damage }/>
+                                    <br />
+                                    <br />
+                                    <h2>{que_id}: {question.question}</h2>
+                                    <h5>{question.description}</h5>
+                                    <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
+                                    
+                                </div>
+                                <div className="next-button">
+                                    <Button onClick={nextQue} disabled={isLoading}>Results</Button>
+                                    
+                                </div>
+                                <div className="prev-button">
+                                    <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
+                                </div>
+       
+                                <Picture floor_id={floor_id} que_id={que_id}/>
+                      
+                            </Col>
+                            <Col xs={1}>
+                            </Col>
+                            <Col>
+                            <div className="">
+                                <Info />
+                                <br/>
+                                <h2 className="">Navigation</h2>
+                                
+                                <Menu
+                                floor_id={floor_id} 
+                                que_id={que_id} 
+                                doc_id={doc_id}
+                                colour={colour}
+                                set_show={setShow}
+                                />
+                            </div>
+                            </Col>
+
+                        </Row>
+                    </div>
+                </Container>
+            </div>
+
+
+        )
+    }
     if (question.current_route === "option_question") {
         return (
             <div className="Question">
@@ -234,6 +293,7 @@ const Question = () => {
         )
 
     }
+    
     if (question.current_route === "check_question") {
         return (
             <div className="Question">
@@ -288,62 +348,6 @@ const Question = () => {
             </div>
         )
 
-    }
-    if (question.current_route === "text_question" && parseInt(que_id) === Object.keys(Questiondata[floor_id]).length-1) {
-        return (
-            <div className="Question">
-                <Container>
-                    <div>
-                        <Row>
-                            <Col xs={8}>
-                                <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
-                                <div className="form">
-                                    <h2>Strength: { items.score }</h2>
-                                    <ImgStrength score={ items.score }/>
-                                    <h2>Damage: { items.damage }</h2>
-                                    <ImgDamage damage={ items.damage }/>
-                                    <br />
-                                    <br />
-                                    <h2>{que_id}: {question.question}</h2>
-                                    <h5>{question.description}</h5>
-                                    <p>Look below for guidance on measuring area</p>
-                                    <Textform que_id={que_id} set_res={setResponse} setShow={setShow} floor_id={floor_id}/>
-                                </div>
-                                
-                                <div className="next-button">
-                                    <Button onClick={nextQue} disabled={isLoading}>Results</Button> 
-                                </div>
-                                <div className="prev-button">
-                                    <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
-                                </div>
-                                <Picture floor_id={floor_id} que_id={que_id}/>
-                            
-                            </Col>
-                            <Col xs={1}>
-                            </Col>
-                            <Col>
-                            <div className="">
-                                <Info />
-                                <br/>
-                                <h2 className="">Navigation</h2>
-                                
-                                <Menu
-                                floor_id={floor_id} 
-                                que_id={que_id} 
-                                doc_id={doc_id}
-                                colour={colour}
-                                set_show={setShow}
-                                />
-                            </div>
-                            </Col>
-
-                        </Row>
-                    </div>
-                </Container>
-            </div>
-
-        )
     }
     if (question.current_route === "text_question") {
         return (
