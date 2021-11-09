@@ -103,7 +103,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
         }
         if (items[completed_i] === true && Questiondata[floor_id][i]['current_route'] === "check_question") {
             
-            const options = ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane.", "Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete walls", "Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar ", "Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"]
+            const options = ["Steel sheet (Examples: Corrugated iron, long-run metal or similar weight)", "Heavy tiles (Examples: Clay, concrete or similar weight)", "Light tiles (Examples: Metal tiles, wooden shingles)", "Membrane roof (Example: Torch-on membrane on plywood sheets)", "Concrete slab with waterproof coating or membrane.", "Brick (URM)", "Slab", "Timber piles", "Concrete piles", "Engineered poles", "Concrete / Concrete block walls", "Concrete ", "Timber (Example: weatherboards) ", "Concrete block ", "Brick or brick veneer ", "Stucco / Monolithic or similar ", "Concrete", "Timber (Example: weatherboards)", "Concrete block", "Brick or brick veneer", "Stucco / Monolithic or similar"]
             const get_true = () => {
                 const list = []
                 for (let x in options) {
