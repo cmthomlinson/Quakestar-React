@@ -125,7 +125,7 @@ const Question = () => {
                         <Row>
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
-                                <Image src={require('../img/HouseCheck.PNG')}/>
+                                <Image src={require('../img/HouseCheck.png')}/>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -181,7 +181,7 @@ const Question = () => {
                         <Row>
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
-                                <Image src={require('../img/HouseCheck.PNG')}/> 
+                                <Image src={require('../img/HouseCheck.png')}/> 
                                 <h2>HouseCheck</h2>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
@@ -240,7 +240,7 @@ const Question = () => {
                         <Row>
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
-                                <Image src={require('../img/HouseCheck.PNG')}/>
+                                <Image src={require('../img/HouseCheck.png')}/>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -299,7 +299,7 @@ const Question = () => {
                     <div>
                         <Row>
                             <Col xs={8}>
-                                <Image src={require('../img/HouseCheck.PNG')}/>
+                                <Image src={require('../img/HouseCheck.png')}/>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -355,7 +355,7 @@ const Question = () => {
                         <Row>
                             
                             <Col xs={8}>
-                                <Image src={require('../img/HouseCheck.PNG')}/>
+                                <Image src={require('../img/HouseCheck.png')}/>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -411,7 +411,7 @@ const Question = () => {
                         <Row>   
                             <Col xs={8}>
                                 <Resalert alert={alert} setAlert={setAlert}/>
-                                <Image src={require('../img/HouseCheck.PNG')}/>
+                                <Image src={require('../img/HouseCheck.png')}/>
                                 <h2>Your HouseCheck Results</h2>
                                 <p className="">Save this file and email me a link.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id} strength={items.score} damage={items.damage}/>
