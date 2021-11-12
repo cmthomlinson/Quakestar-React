@@ -43,7 +43,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "23",
             col_input: "4",
-            options: ["Sandy", "Gravel", "Clay", "Rock"]
+            options: ["Sand", "Gravel", "Clay", "Rock"]
         },
         "4": {
             question: "How liquefaction-prone is your site?",
@@ -357,8 +357,8 @@ export const Questiondata = {
             }
         },
         "21": {
-            question: "What is the irregularities of your house",
-            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            question: "Are your bracing walls off-centre at any level? ",
+            description: "Think about each level and each direction and select the worst off-centre situation. Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing walls significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
             img: {
                 title: "",
                 img_name: ""
@@ -427,7 +427,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "23",
             col_input: "4",
-            options: ["Sandy", "Gravel", "Clay", "Rock"]
+            options: ["Sand", "Gravel", "Clay", "Rock"]
         },
         "4": {
             question: "How liquefaction-prone is your site?",
@@ -876,8 +876,8 @@ export const Questiondata = {
             }
         },
         "28": {
-            question: "What is the irregularities of your house",
-            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            question: "Are your bracing walls off-centre at any level? ",
+            description: "Think about each level and each direction and select the worst off-centre situation. Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing walls significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
             img: {
                 title: "",
                 img_name: ""
@@ -946,7 +946,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "23",
             col_input: "4",
-            options: ["Sandy", "Gravel", "Clay", "Rock"]
+            options: ["Sand", "Gravel", "Clay", "Rock"]
         },
         "4": {
             question: "How liquefaction-prone is your site?",
@@ -1530,8 +1530,8 @@ export const Questiondata = {
             }
         },
         "35": {
-            question: "What is the irregularities of your house",
-            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            question: "Are your bracing walls off-centre at any level? ",
+            description: "Think about each level and each direction and select the worst off-centre situation. Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing walls significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
             img: {
                 title: "",
                 img_name: ""
@@ -1600,7 +1600,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "23",
             col_input: "4",
-            options: ["Sandy", "Gravel", "Clay", "Rock"]
+            options: ["Sand", "Gravel", "Clay", "Rock"]
         },
         "4": {
             question: "How liquefaction-prone is your site?",
@@ -2049,8 +2049,8 @@ export const Questiondata = {
             }
         },
         "28": {
-            question: "What is the irregularities of your house",
-            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            question: "Are your bracing walls off-centre at any level? ",
+            description: "Think about each level and each direction and select the worst off-centre situation. Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing walls significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
             img: {
                 title: "",
                 img_name: ""
@@ -2119,7 +2119,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "23",
             col_input: "4",
-            options: ["Sandy", "Gravel", "Clay", "Rock"]
+            options: ["Sand", "Gravel", "Clay", "Rock"]
         },
         "4": {
             question: "How liquefaction-prone is your site?",
@@ -2703,8 +2703,8 @@ export const Questiondata = {
             }
         },
         "35": {
-            question: "What is the irregularities of your house",
-            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            question: "Are your bracing walls off-centre at any level? ",
+            description: "Think about each level and each direction and select the worst off-centre situation. Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing walls significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
             img: {
                 title: "",
                 img_name: ""
@@ -2773,7 +2773,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "23",
             col_input: "4",
-            options: ["Sandy", "Gravel", "Clay", "Rock"]
+            options: ["Sand", "Gravel", "Clay", "Rock"]
         },
         "4": {
             question: "How liquefaction-prone is your site?",
@@ -2813,7 +2813,7 @@ export const Questiondata = {
                 img_name: "Quakestar_280px.png"
             },
             route: "optionform",
-            subject: "Strucutral designer",
+            subject: "Structural designer",
             current_route: "option_question",
             next_route: "option_question",
             row_input: "30",
@@ -3492,8 +3492,8 @@ export const Questiondata = {
             }
         },
         "42": {
-            question: "What is the irregularities of your house",
-            description: "Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing wall significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
+            question: "Are your bracing walls off-centre at any level? ",
+            description: "Think about each level and each direction and select the worst off-centre situation. Regular: bracing walls in both directions are well distributed - not mostly on one side.   Moderate: bracing walls significantly off centre in at least one direction.   Severe: bracing walls mostly on one side in at least one direction.",
             img: {
                 title: "",
                 img_name: ""

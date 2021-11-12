@@ -125,8 +125,7 @@ const Question = () => {
                         <Row>
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
-                                <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
+                                <Image src={require('../img/HouseCheck.PNG')}/>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -138,11 +137,11 @@ const Question = () => {
                                     <h5>{question.description}</h5>
                                     <Optionform que_id={que_id} set_res={setResponse} set_colour={setColour} setShow={setShow} setAlert={setAlert}/>
                                 </div>
+                                <p className="email">Save this file and email me a link.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <div className="next-button">
                                     <Button onClick={nextQue} disabled={isLoading}>Next Question</Button>
                                     
                                 </div>
-                                
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                             </Col>
                             <Col xs={1}>
@@ -182,8 +181,8 @@ const Question = () => {
                         <Row>
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
-                                <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
+                                <Image src={require('../img/HouseCheck.PNG')}/> 
+                                <h2>HouseCheck</h2>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -202,8 +201,8 @@ const Question = () => {
                                 </div>
                                 <div className="prev-button">
                                     <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
+                                    <p className="">Save this file and email me a link.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 </div>
-       
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                       
                             </Col>
@@ -241,8 +240,7 @@ const Question = () => {
                         <Row>
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
-                                <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
+                                <Image src={require('../img/HouseCheck.PNG')}/>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -261,8 +259,8 @@ const Question = () => {
                                 </div>
                                 <div className="prev-button">
                                     <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
+                                    <p className="">Save this file and email me a link.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 </div>
-       
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                       
                             </Col>
@@ -301,8 +299,7 @@ const Question = () => {
                     <div>
                         <Row>
                             <Col xs={8}>
-                                <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
+                                <Image src={require('../img/HouseCheck.PNG')}/>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -320,6 +317,7 @@ const Question = () => {
                                 </div>
                                 <div className="prev-button">
                                     <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
+                                    <p className="">Save this file and email me a link.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 </div>
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                             
@@ -357,8 +355,7 @@ const Question = () => {
                         <Row>
                             
                             <Col xs={8}>
-                                <Image src={require('../img/Quakestar_280px.png')}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
+                                <Image src={require('../img/HouseCheck.PNG')}/>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
@@ -376,6 +373,7 @@ const Question = () => {
                                 </div>
                                 <div className="prev-button">
                                     <Button onClick={prevQue} disabled={isLoading}>Previous Question</Button>
+                                    <p className="">Save this file and email me a link.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 </div>
                                 <Picture floor_id={floor_id} que_id={que_id}/>
                             
@@ -413,9 +411,9 @@ const Question = () => {
                         <Row>   
                             <Col xs={8}>
                                 <Resalert alert={alert} setAlert={setAlert}/>
-                                <p className="email">Save and continue working in another time.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
-                                <Image src={require('../img/Quakestar_280px.png')}/>
+                                <Image src={require('../img/HouseCheck.PNG')}/>
                                 <h2>Your HouseCheck Results</h2>
+                                <p className="">Save this file and email me a link.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id} strength={items.score} damage={items.damage}/>
                             </Col>
                             <Col xs={1}>
