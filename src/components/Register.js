@@ -50,7 +50,7 @@ const Register = () => {
         <div className="Question">
             <Container>
                 <div class="text-center">
-                    <Image src={require('../img/Quakestar_280px.png')}/>
+                    <Image src={require('../img/HouseCheck.png')}/>
                 </div>
                 <h1>Start Questionnaire</h1>
                 <Form onSubmit={handleSubmit}>

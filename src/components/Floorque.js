@@ -61,7 +61,7 @@ const Floorque = () => {
                     <div>
                         <Row>
                             <Col xs={8} >
-                            <Image src={require('../img/Quakestar_280px.png')}/>
+                            <Image src={require('../img/HouseCheck.png')}/>
                             <div class="">
                                 <h1>Lets get started</h1>
                                 <h4>To initalize your questionnaire, select how many floors your property has.</h4>

@@ -46,7 +46,6 @@ const Record = () => {
         .then(data => {
             setValue(data);
             setIsLoading(false);
-            set_localstorage(data);
             console.log('Success:', data);
             const end = Object.keys(Questiondata[data['floor_id']]).length
             const next_route = "/question/" + data['floor_id'] +"/" + end + "/" + doc_id

@@ -28,9 +28,6 @@ function App() {
             <LinkContainer to="/register">
               <Nav.Link>HouseCheck</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/admin">
-              <Nav.Link>Admin</Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/record">
               <Nav.Link>myHouseCheck</Nav.Link>
             </LinkContainer>

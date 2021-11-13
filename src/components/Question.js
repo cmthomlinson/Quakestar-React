@@ -413,7 +413,7 @@ const Question = () => {
                                 <Resalert alert={alert} setAlert={setAlert}/>
                                 <Image src={require('../img/HouseCheck.png')}/>
                                 <h2>Your HouseCheck Results</h2>
-                                <p className="">Save this file and email me a link.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
+                                <p className="">Either save your Housecheck ID or be emailed a link to view and/or edit your saved responses.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id} strength={items.score} damage={items.damage}/>
                             </Col>
                             <Col xs={1}>
