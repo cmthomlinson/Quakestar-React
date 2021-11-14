@@ -47,6 +47,10 @@
     
 }
 
+.admin {
+    float: right;
+}
+
 .email-2 {
     float: left;
     padding-top: 4rem;

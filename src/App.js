@@ -31,6 +31,9 @@ function App() {
             <LinkContainer to="/record">
               <Nav.Link>myHouseCheck</Nav.Link>
             </LinkContainer>
+            <LinkContainer className="mr-sm-2" to="/admin">
+              <Nav.Link>Admin login</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Container>
       </Navbar>
