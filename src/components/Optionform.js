@@ -16,7 +16,7 @@ const get_options = (que_id, floor_id) => {
 }
 
 
-const Optionform = ({que_id, set_res, set_colour, setShow, setAlert}) => {
+const Optionform = ({que_id, set_res, set_colour, setShow, setAlert, items}) => {
     const { floor_id, doc_id } = useParams();
     const question = Questiondata[floor_id][que_id];
     const options = question.options
@@ -66,7 +66,10 @@ const Optionform = ({que_id, set_res, set_colour, setShow, setAlert}) => {
         }
         
         const body = { post: {
-            "response": value
+            "response": value,
+            "score": items['score'],
+            "damage": items['damage']
+
         }};
 
         

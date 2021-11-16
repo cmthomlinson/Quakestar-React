@@ -8,7 +8,7 @@ import Topalert from './Topalert';
 
 
 
-const Textform = ({que_id, setShow, set_res}) => {
+const Textform = ({que_id, setShow, set_res, items}) => {
     const { floor_id, doc_id } = useParams();
 
     const question = Questiondata[floor_id][que_id]
@@ -45,7 +45,9 @@ const Textform = ({que_id, setShow, set_res}) => {
         const body = { post: {
             "response": {
                 "x": parseInt(value.x),
-                "y": parseInt(value.y)
+                "y": parseInt(value.y),
+                "score": items['score'],
+                "damage": items['damage']
             }
         }}
 

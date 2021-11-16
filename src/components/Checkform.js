@@ -8,7 +8,7 @@ import Topalert from './Topalert';
 
 
 
-const Checkform = ({que_id, setShow, set_res}) => {
+const Checkform = ({que_id, setShow, set_res, items}) => {
     const { floor_id, doc_id } = useParams();
 
     const question = Questiondata[floor_id][que_id]
@@ -58,7 +58,9 @@ const Checkform = ({que_id, setShow, set_res}) => {
         localStorage.setItem(que_id, JSON.stringify(value))
         
         const body = { post: {
-            "response": value
+            "response": value,
+            "score": items['score'],
+            "damage": items['damage']
         }}
 
 
