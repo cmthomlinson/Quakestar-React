@@ -58,9 +58,7 @@ const Checkform = ({que_id, setShow, set_res, items}) => {
         localStorage.setItem(que_id, JSON.stringify(value))
         
         const body = { post: {
-            "response": value,
-            "score": items['score'],
-            "damage": items['damage']
+            "response": value
         }}
 
 

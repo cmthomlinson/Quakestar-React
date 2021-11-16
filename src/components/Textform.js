@@ -47,9 +47,7 @@ const Textform = ({que_id, setShow, set_res, items}) => {
                 "x": parseInt(value.x),
                 "y": parseInt(value.y),
 
-            },
-            "score": items['score'],
-            "damage": items['damage']
+            }
         }}
 
         const alert_val = "X: " + value.x +"m" + "  Y: " + value.y +"m"

@@ -66,9 +66,7 @@ const Optionform = ({que_id, set_res, set_colour, setShow, setAlert, items}) => 
         }
         
         const body = { post: {
-            "response": value,
-            "score": items['score'],
-            "damage": items['damage']
+            "response": value
 
         }};
 
