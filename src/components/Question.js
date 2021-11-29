@@ -182,7 +182,6 @@ const Question = () => {
                             <Resalert alert={alert} setAlert={setAlert}/>
                             <Col xs={8}>
                                 <Image src={require('../img/HouseCheck.png')}/> 
-                                <h2>HouseCheck</h2>
                                 <div className="form">
                                     <h2>Strength: { items.score }</h2>
                                     <ImgStrength score={ items.score }/>
