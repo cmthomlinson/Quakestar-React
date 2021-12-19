@@ -42,11 +42,13 @@ const Question = () => {
             (result) => {
                 setItems(result)
                 setIsLoading(false)
+                console.log(result)
             },
             (error) => {
                 setItems({
                     "score": "error",
-                    "damage": "error"
+                    "damage": "error",
+                    "ireg": "error"
                 })
                 setIsLoading(false)
     
@@ -131,6 +133,7 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <p>Ireggularity factor: { items.ireg }</p>
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
@@ -187,6 +190,7 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <p>Ireggularity factor: { items.ireg }</p>
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
@@ -245,6 +249,7 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <p>Ireggularity factor: { items.ireg }</p>
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
@@ -304,6 +309,7 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <p>Ireggularity factor: { items.ireg }</p>
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
@@ -360,6 +366,7 @@ const Question = () => {
                                     <ImgStrength score={ items.score }/>
                                     <h2>Damage: { items.damage }</h2>
                                     <ImgDamage damage={ items.damage }/>
+                                    <p>Ireggularity factor: { items.ireg }</p>
                                     <br />
                                     <br />
                                     <h2>{que_id}: {question.question}</h2>
@@ -412,6 +419,7 @@ const Question = () => {
                                 <Resalert alert={alert} setAlert={setAlert}/>
                                 <Image src={require('../img/HouseCheck.png')}/>
                                 <h2>Your HouseCheck Results</h2>
+                                <p>Ireggularity factor: { items.ireg }</p>
                                 <p className="">Either save your Housecheck ID or be emailed a link to view and/or edit your saved responses.<Button variant="link"  disabled={emailisLoading} onClick={!emailisLoading ? send_email : null} role="button">{emailisLoading ? 'Loading…' : submitted ? 'Email sent': 'Email me'}</Button></p>
                                 <Results floor_id={floor_id} que_id={que_id} doc_id={doc_id} strength={items.score} damage={items.damage}/>
                             </Col>
