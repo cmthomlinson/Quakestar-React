@@ -653,7 +653,7 @@ export const Questiondata = {
             next_route: "option_question",
             row_input: "54",
             col_input: "5",
-            options: ["Structural steel", "Ply", "Gib / Plasterboard ", "Concrete Block", "Concrete", "Brick (URM)"]
+            options: ["Structural steel", "Ply", "Gib / Plasterboard", "Concrete Block", "Concrete", "Brick (URM)"]
         },
         "19": {
             question: "What are the Y-direction bracing walls made of at the First floor?",
