@@ -5,6 +5,9 @@ const ImgDamage = ({damage}) => {
     if (damage > 80) {
         return <Image src={require('../img/0.png')}/>
     }
+    if (damage < 5) {
+        return <Image src={require('../img/5.png')}/>
+    }
     if (damage < 10) {
         return <Image src={require('../img/4.png')}/>
     }
@@ -17,10 +20,10 @@ const ImgDamage = ({damage}) => {
     if (damage < 80) {
         return <Image src={require('../img/1.png')}/>
     }
+
     else {
         return <Image src={require('../img/5.png')}/>
     }
-    
 
 }
 
