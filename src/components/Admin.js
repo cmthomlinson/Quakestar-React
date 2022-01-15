@@ -11,6 +11,33 @@ const Admin = () => {
         setIsLoading(true);
         
 
+        const body = { user: {
+            "email": email,
+            "password": password
+        }}
+        
+        const url = 'https://quakestar.herokuapp.com/login/'
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
+        })
+        .then(response => response.json())
+        .then(data => {
+            setIsLoading(false);
+            const next_route = "/adminpage/"
+            history.push(next_route)
+
+        })
+        .catch((error) => {
+            setIsLoading(false);
+            console.error('Error:', error);
+        });
+        
+    
 
 
 

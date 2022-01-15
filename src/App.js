@@ -45,22 +45,32 @@ function App() {
             <Route exact path="/">
               <Home/>
             </Route>
+
             <Route exact path="/register">
               <Register/>
             </Route>
+
             <Route exact path="/floorque/">
               <Floorque/>
             </Route>
+
             <Route path="/question/:floor_id/:que_id/:doc_id">
               <Question />
             </Route>
+            
+            <Route path="/adminpage">
+              <Adminpage />
+            </Route>
+
             <Route path="/record">
               <Record/>
             </Route>
+
             <Route path="/admin">
               <Admin />
             <Route/>
 
+            <Route/>
             </Route>
           </Switch>
 
