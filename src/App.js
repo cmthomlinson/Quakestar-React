@@ -11,6 +11,7 @@ import Register from "./components/Register";
 import Admin from "./components/Admin";
 import Floorque from './components/Floorque';
 import Record from './components/Record';
+import Adminpage from './components/Adminpage';
 
 import './style.css'
 
