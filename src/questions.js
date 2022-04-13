@@ -840,7 +840,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.png"
+                img_name: "Walls.PNG"
             },
             route: "textform",
             subject: "Length of Ground floor bracing walls",
@@ -860,7 +860,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.png"
+                img_name: "Walls.PNG"
             },
             route: "textform",
             subject: "Length of First floor bracing walls",
