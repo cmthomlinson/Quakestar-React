@@ -4,7 +4,7 @@ import { Accordion, Button, Form } from 'react-bootstrap';
 
 
 
-const Info = () => {
+const Info = ({}) => {
     const { floor_id, que_id, doc_id } = useParams();
     const [issue, setIssue] = useState("");
     const [type, setType] = useState()
@@ -57,7 +57,7 @@ const Info = () => {
     return (
         <div>
             <div >
-                <Accordion defaultActiveKey="0" flush >
+                <Accordion defaultActiveKey="0" flush class="collapse" data-bs-toggle="collapse">
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>
                         <div class="">

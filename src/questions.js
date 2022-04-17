@@ -198,7 +198,7 @@ export const Questiondata = {
         },
         "14": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -612,7 +612,7 @@ export const Questiondata = {
         },
         "16": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -642,7 +642,7 @@ export const Questiondata = {
         },
         "18": {
             question: "What are the X-direction bracing walls made of at the First floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -840,7 +840,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Ground floor bracing walls",
@@ -860,7 +860,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Walls.PNG"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of First floor bracing walls",
@@ -1161,7 +1161,7 @@ export const Questiondata = {
         },
         "18": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1191,7 +1191,7 @@ export const Questiondata = {
         },
         "20": {
             question: "What are the X-direction bracing walls made of at the First floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1221,7 +1221,7 @@ export const Questiondata = {
         },
         "22": {
             question: "What are the X-direction bracing walls made of at the Second floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1785,7 +1785,7 @@ export const Questiondata = {
         },
         "16": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -1815,7 +1815,7 @@ export const Questiondata = {
         },
         "18": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2334,7 +2334,7 @@ export const Questiondata = {
         },
         "18": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2364,7 +2364,7 @@ export const Questiondata = {
         },
         "20": {
             question: "What are the X-direction bracing walls made of at the First floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2394,7 +2394,7 @@ export const Questiondata = {
         },
         "22": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -2647,7 +2647,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.png"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Ground floor bracing walls",
@@ -2667,7 +2667,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.png"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of First floor bracing walls",
@@ -2687,7 +2687,7 @@ export const Questiondata = {
             description: "Choose a direction parallel to any selected wall. Call that Direction X. Direction Y is at right angles. For each floor, add up the total length of full-height walls in each direction. They must be longer than 1 metre with no windows, doors or large holes. These walls will help brace your house to resist earthquake loads. Enter the total length in each direction (X and Y) for each floor.",
             img: {
                 title: "",
-                img_name: "Floor_area.png"
+                img_name: "Walls.png"
             },
             route: "textform",
             subject: "Length of Basement floor bracing walls",
@@ -3018,7 +3018,7 @@ export const Questiondata = {
         },
         "20": {
             question: "What are the X-direction bracing walls made of at the Ground floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3048,7 +3048,7 @@ export const Questiondata = {
         },
         "22": {
             question: "What are the X-direction bracing walls made of at the First floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3078,7 +3078,7 @@ export const Questiondata = {
         },
         "24": {
             question: "What are the X-direction bracing walls made of at the Second floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
@@ -3108,7 +3108,7 @@ export const Questiondata = {
         },
         "26": {
             question: "What are the X-direction bracing walls made of at the Basement floor?",
-            description: "",
+            description: "Bracing walls in each direction help resist earthquake loads on your house.  Choose a direction parallel to a bracing wall in your house. Call that Direction X.  Direction Y is at right angles. Later we ask you to measure and enter the lengths of bracing walls in each direction at each level. Questions to follow on the length of wall include a guidance diagram.",
             img: {
                 title: "",
                 img_name: "Quakestar_280px.png"
