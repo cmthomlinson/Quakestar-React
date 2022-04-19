@@ -65,8 +65,8 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
     }, [])
 
     const strength_lookup = (strength) => {
-        if (strength > 250) {
-            return "Very much higher strength than"
+        if (strength > 180) {
+            return "very much higher strength than"
         }
         else {
             return Lookup['strength'][parseInt(strength)]
@@ -74,8 +74,8 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
     }
 
     const damage_lookup = (damage) => {
-        if (damage > 99) {
-            return "Very much more damage than"
+        if (damage > 80) {
+            return "very much more damage than"
         }
         else {
             return Lookup['damage'][parseInt(damage)]
