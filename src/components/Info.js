@@ -12,10 +12,7 @@ const Info = ({}) => {
     const [isLoading, setIsLoading] = useState(false);
 
     
-    useEffect(() => {
-        setSubmitted(false)
-        setIssue(" ")
-    }, [que_id]);
+
 
     useEffect(() => {
         setIssue(" ")
@@ -56,11 +53,11 @@ const Info = ({}) => {
     }
     return (
         <div>
-            <div >
-                <Accordion defaultActiveKey="0" flush class="collapse" data-bs-toggle="collapse">
-                    <Accordion.Item eventKey="0">
+            <div>
+                <Accordion defaultActiveKey={['0']}>
+                    <Accordion.Item eventKey="2">
                         <Accordion.Header>
-                        <div class="">
+                        <div>
                             <h3>HouseCheck</h3> 
                             <h5 class="text-muted">by QuakeStar</h5> 
                         </div>
