@@ -62,7 +62,7 @@ const Checkform = ({que_id, setShow, set_res, items}) => {
         }}
 
 
-        const post_url = "https://quakestar.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
+        const post_url = "https://quakestar3-b8b8e24f42d9.herokuapp.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
         fetch(post_url, {
         method: 'POST',

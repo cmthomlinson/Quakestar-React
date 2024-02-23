@@ -39,7 +39,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
 
     function getDetails(floor_id, doc_id) {
         
-        const url = "https://quakestar.herokuapp.com/results/" + floor_id + "/" + doc_id
+        const url = "https://quakestar3-b8b8e24f42d9.herokuapp.com/results/" + floor_id + "/" + doc_id
         fetch(url)
           .then(res => res.json())
           .then(

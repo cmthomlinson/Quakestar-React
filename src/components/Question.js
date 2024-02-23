@@ -35,7 +35,7 @@ const Question = () => {
 
     function getscoreanddamage(floor_id, doc_id) {
         
-        const url = "https://quakestar.herokuapp.com/sd/" + floor_id + "/" + doc_id
+        const url = "https://quakestar3-b8b8e24f42d9.herokuapp.com/sd/" + floor_id + "/" + doc_id
         fetch(url)
           .then(res => res.json())
           .then(
@@ -67,7 +67,7 @@ const Question = () => {
         };
 
         emailsetIsLoading(true)
-        const url = "https://quakestar.herokuapp.com/send_email"
+        const url = "https://quakestar3-b8b8e24f42d9.herokuapp.com/send_email"
 
         fetch(url, {
         method: 'POST',
