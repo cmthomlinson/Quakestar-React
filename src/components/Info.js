@@ -30,7 +30,7 @@ const Info = ({}) => {
         }}
 
 
-        const url = 'https://quakestar3-b8b8e24f42d9.herokuapp.com/issue'
+        const url = 'https://iidqtmz2yw.us-east-2.awsapprunner.com/issue'
         
 
         fetch(url, {

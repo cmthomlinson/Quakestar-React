@@ -35,7 +35,7 @@ const Question = () => {
 
     function getscoreanddamage(floor_id, doc_id) {
         
-        const url = "https://quakestar3-b8b8e24f42d9.herokuapp.com/sd/" + floor_id + "/" + doc_id
+        const url = "https://iidqtmz2yw.us-east-2.awsapprunner.com/sd/" + floor_id + "/" + doc_id
         fetch(url)
           .then(res => res.json())
           .then(
@@ -58,7 +58,7 @@ const Question = () => {
 
     function send_email() {
 
-        const results_url = "https://main.d3jmjz4gq263kh.amplifyapp.com/question/" + floor_id + "/" + Object.keys(Questiondata[floor_id]).length + "/" + doc_id
+        const results_url = "https://iidqtmz2yw.us-east-2.awsapprunner.com/question/" + floor_id + "/" + Object.keys(Questiondata[floor_id]).length + "/" + doc_id
 
         const body = {
             "user": JSON.parse(localStorage.getItem('user')),
@@ -67,7 +67,7 @@ const Question = () => {
         };
 
         emailsetIsLoading(true)
-        const url = "https://quakestar3-b8b8e24f42d9.herokuapp.com/send_email"
+        const url = "https://iidqtmz2yw.us-east-2.awsapprunner.com/send_email"
 
         fetch(url, {
         method: 'POST',

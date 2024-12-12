@@ -31,7 +31,7 @@ const Floorque = () => {
             "floor_id": floor_id
         }}
         
-        const url = 'https://quakestar3-b8b8e24f42d9.herokuapp.com/register/' +  body['user']['floor_id']
+        const url = 'https://iidqtmz2yw.us-east-2.awsapprunner.com/register/' +  body['user']['floor_id']
         
 
         fetch(url, {
