@@ -30,7 +30,7 @@ const Info = ({}) => {
         }}
 
 
-        const url = 'https://iidqtmz2yw.us-east-2.awsapprunner.com/issue'
+        const url = 'https://qyp5jmq2eg.us-east-1.awsapprunner.com/issue'
         
 
         fetch(url, {

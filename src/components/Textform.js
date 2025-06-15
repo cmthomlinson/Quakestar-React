@@ -55,7 +55,7 @@ const Textform = ({que_id, setShow, set_res, items}) => {
         
         check_submitted(que_id)
 
-        const post_url = "https://iidqtmz2yw.us-east-2.awsapprunner.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
+        const post_url = "https://qyp5jmq2eg.us-east-1.awsapprunner.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id
 
         fetch(post_url, {
         method: 'POST',

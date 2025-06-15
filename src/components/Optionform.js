@@ -71,7 +71,7 @@ const Optionform = ({que_id, set_res, set_colour, setShow, setAlert, items}) => 
         }};
 
         
-        const post_url = "https://iidqtmz2yw.us-east-2.awsapprunner.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id;
+        const post_url = "https://qyp5jmq2eg.us-east-1.awsapprunner.com/submit/" + floor_id + "/" + que_id + "/"  + doc_id;
 
         fetch(post_url, {
         method: 'POST',

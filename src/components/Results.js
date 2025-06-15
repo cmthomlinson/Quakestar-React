@@ -39,7 +39,7 @@ const Results = ({submited, floor_id, doc_id, strength, damage}) => {
 
     function getDetails(floor_id, doc_id) {
         
-        const url = "https://iidqtmz2yw.us-east-2.awsapprunner.com/results/" + floor_id + "/" + doc_id
+        const url = "https://qyp5jmq2eg.us-east-1.awsapprunner.com/results/" + floor_id + "/" + doc_id
         fetch(url)
           .then(res => res.json())
           .then(

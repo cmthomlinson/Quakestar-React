@@ -39,7 +39,7 @@ const Record = () => {
         e.preventDefault();
         setIsLoading(true);
 
-        const post_url = "https://iidqtmz2yw.us-east-2.awsapprunner.com/doc/" + doc_id;
+        const post_url = "https://qyp5jmq2eg.us-east-1.awsapprunner.com/doc/" + doc_id;
 
         fetch(post_url)
         .then(response => response.json())
